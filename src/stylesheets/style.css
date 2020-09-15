@@ -22,7 +22,7 @@ h4{
 }
 #MainContainer{
   display: grid;
-  grid-template-columns: 96px 1fr 2fr 96px;
+  grid-template-columns: 96px 1fr 3fr 96px;
   width:100%;
   height:100vh;
   grid-template-areas: 
@@ -31,7 +31,7 @@ h4{
 #LeftColumn{
   grid-area: leftColumn;
   position: fixed;
-  width: 25%;
+  width: calc((100vw - 192px) *.25);
   left: 96px;
   height: 100vh;
 }
@@ -111,4 +111,17 @@ svg.circle.mask {
 }
 .projectText.circle {
   transform: translate(12%, 43%);
+}
+div#RightPanel {
+  position: fixed;
+  background-color: white;
+  height: 100vh;
+  z-index: 7;
+  width: calc((100vw - 192px) * .75 + 96px);
+  right: 0px;
+  transform: translateX(100%);
+  transition: transform 500ms;
+}
+div#RightPanel.active {
+  transform: translateX(0%);
 }

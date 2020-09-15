@@ -5,11 +5,23 @@ import flowerPath from './flower.svg';
 
 
 class App extends React.Component{
+  constructor(props){
+    super(props)
+    this.state ={
+      status:null
+    }
+    this.rightPanelActivate = this.rightPanelActivate.bind(this)
+  }
+  rightPanelActivate(){
+    console.log('click')
+    this.setState({status:"active"})
+  }
   render() {
     return(
       <div id = 'MainContainer'>
         <LeftColumn/>
-        <Projects/>
+        <Projects handler = {this.rightPanelActivate}/>
+        <RightPanel status = {this.state.status}/>
       </div>
     )
   }
@@ -35,6 +47,17 @@ class LeftColumn extends React.Component{
   }
 }
 
+
+class RightPanel extends React.Component{
+  render(){
+    return(
+      <div className ={this.props.status} id = 'RightPanel'>
+        
+      </div>
+    )
+    }
+}
+
 class Projects extends React.Component{
   render(){
     return(
@@ -44,6 +67,7 @@ class Projects extends React.Component{
           
           return(
            <ProjectBlock 
+            handler = {this.props.handler}
             mask = {element.mask} 
             img = {element.img} 
             num = {num} 
@@ -62,7 +86,7 @@ class ProjectBlock extends React.Component{
   render(){
     
     return(
-      <div className ='ProjectBlock'>
+      <div className ='ProjectBlock' onClick = {this.props.handler}>
         <ProjectText 
           name={this.props.name}
           tags = {this.props.tags}
