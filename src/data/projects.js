@@ -7,8 +7,8 @@ const ProjectsData = [
             '#3D',
             '#WEBDESIGN'
         ],
-        mask: 'circle',
-        img: './images/whitetower.svg'
+        mask: 'flower',
+        img: './images/whitetower.png'
     },
     {
         name: 'САЙТ БEЛОЙ БАШНИ',
@@ -18,8 +18,8 @@ const ProjectsData = [
             '#3D',
             '#WEBDESIGN'
         ],
-        mask: 'flower',
-        img: './images/whitetower.svg'
+        mask: 'circle',
+        img: './images/fiit.png'
     },
     {
         name: 'САЙТ БEЛОЙ БАШНИ',
@@ -30,9 +30,30 @@ const ProjectsData = [
             '#WEBDESIGN'
         ],
         mask: 'oval',
-        img: './images/whitetower.svg'
+        img: './images/instagram.png'
     },
-    
+    {
+        name: 'САЙТ БEЛОЙ БАШНИ',
+        link: '',
+        tags: [
+            '#ANIMATION',
+            '#3D',
+            '#WEBDESIGN'
+        ],
+        mask: 'cross',
+        img: './images/instagram.png'
+    },
+    {
+        name: 'САЙТ БEЛОЙ БАШНИ',
+        link: '',
+        tags: [
+            '#ANIMATION',
+            '#3D',
+            '#WEBDESIGN'
+        ],
+        mask: 'romb',
+        img: './images/instagram.png'
+    },
 
    
 ]

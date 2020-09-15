@@ -72,6 +72,10 @@ div#myPhoto {
 }
 svg{
   cursor: pointer;
+  width: 124%;
+}
+.ProjectBlock:hover path{
+ fill:black
 }
 .ProjectBlock {
   height: 20vw;
@@ -84,6 +88,27 @@ svg{
   z-index: 5;
   position: relative;
 }
+.ProjectBlock:hover .projectText{
+  opacity: 1;
+}
 .ProjectImg:hover path {
   fill: black
+}
+.projectText {
+  display: flex;
+  transform: translate(28%, 60%);
+  flex-flow: column;
+  justify-content: space-between;
+  width: 15vw;
+  height: 11vw;
+  position: absolute;
+  color: white;
+  opacity: 0;
+  z-index: 6;
+}
+svg.circle.mask {
+  transform: translate(-10%, -11%);
+}
+.projectText.circle {
+  transform: translate(12%, 43%);
 }
