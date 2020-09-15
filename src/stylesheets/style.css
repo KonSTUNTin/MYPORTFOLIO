@@ -1,0 +1,89 @@
+*{
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+:root{
+  --x: 12px;
+  --x2: 24px;
+  --x3: 36px;
+  --blue: #DCF9FF
+}
+body{
+  background-color: var(--blue);
+}
+h1{
+  font-size: var(--x3);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+h4{
+  font-size: var(--x2);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+#MainContainer{
+  display: grid;
+  grid-template-columns: 96px 1fr 2fr 96px;
+  width:100%;
+  height:100vh;
+  grid-template-areas: 
+  '. leftColumn projects .'
+}
+#LeftColumn{
+  grid-area: leftColumn;
+  position: fixed;
+  width: 25%;
+  left: 96px;
+  height: 100vh;
+}
+#projectMatrix{
+  grid-area: projects;
+}
+div#myPhoto {
+  background-image: url('/images/avatar.png');
+  background-size: auto 100%;
+  width: 10vh;
+  height: 10vh;
+  animation: avatarSwitch 3s infinite step-start;
+}
+
+@keyframes avatarSwitch{
+  0%{
+    background-position: 0% 0%;
+  }
+  20%{
+    background-position: 25% 0%;
+  }
+  40%{
+    background-position: 50% 0%;
+  }
+  60%{
+    background-position: 75% 0%;
+  }
+  80%{
+    background-position: 100% 0%;
+  }
+  100%{
+    background-position: 125% 0%;
+  }
+}
+.ProjectImg{
+  width: 120%;
+  
+}
+svg{
+  cursor: pointer;
+}
+.ProjectBlock {
+  height: 20vw;
+  float: left;
+  max-width: 33%;
+  min-width: 19vw;
+  cursor: pointer;
+}
+.ProjectBlock:hover {
+  z-index: 5;
+  position: relative;
+}
+.ProjectImg:hover path {
+  fill: black
+}
