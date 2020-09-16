@@ -81,11 +81,11 @@ div#myPhoto {
 }
 svg{
   cursor: pointer;
-  width: 124%;
+  width: 106%;
   top: 0px;
   position: absolute;
   max-width: 500px;
-  transform: translate(-12%, -12%);
+  transform: translate(-3%, -3%);
 }
 
 .ProjectBlock {
@@ -99,30 +99,31 @@ svg{
 .ProjectBlock:hover {
   z-index: 5;
 }
-.ProjectBlock:hover .projectText{
+.ProjectBlock:hover .projectText, .ProjectBlock.inCase .projectText{
   opacity: 1;
 }
 circle {
   transition: r 500ms;
 }
-.ProjectBlock:hover circle {
+.ProjectBlock:hover circle, .ProjectBlock.inCase circle{
   r: 150%;
 }
 .projectText {
   display: flex;
   flex-flow: column;
+  transition: opacity 500ms;
   position: relative;
   justify-content: space-between;
   width: 60%;
   height: 60%;
-  margin-left: 14%;
+  margin-left: 20%;
   margin-top: 20%;
   color: white;
   opacity: 0;
   z-index: 6;
 }
 svg.circle.mask {
-  transform: translate(-10%, -11%);
+  transform: translate(-3%, -3%);
 }
 div#RightPanel {
   position: fixed;

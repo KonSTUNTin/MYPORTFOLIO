@@ -9,8 +9,8 @@ class App extends React.Component{
   constructor(props){
     super(props)
     this.state ={
-      status:null,
-      content:null,
+      status: null,
+      content: null,
       index: null,
     }
     this.rightPanelActivate = this.rightPanelActivate.bind(this)

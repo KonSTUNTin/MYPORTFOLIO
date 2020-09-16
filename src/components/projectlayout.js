@@ -11,6 +11,7 @@ class Projects extends React.Component{
               return(
               <ProjectBlock 
                   key = {num}
+                  inCase = {false}
                   handler = {this.props.handler}
                   mask = {element.mask} 
                   img = {element.img} 
@@ -28,9 +29,23 @@ class Projects extends React.Component{
 }
   
 class ProjectBlock extends React.Component{
+    constructor(props){
+      super(props)
+      this.angle = 0;
+      if(!this.props.inCase)this.angle = Math.random() * 20 - 10
+    }
     render(){
+        let myclass = '';
+        if(this.props.inCase){
+          myclass = 'inCase'
+        }
         return(
-            <div className ='ProjectBlock' id = {this.props.num} onClick = {this.props.handler}>
+            <div 
+            className ={'ProjectBlock ' + myclass} 
+            id = {this.props.num} 
+            onClick = {this.props.handler}
+            style={{transform: "rotate(" + this.angle +'deg)'}}
+            >
                 <ProjectText 
                 name={this.props.name}
                 tags = {this.props.tags}

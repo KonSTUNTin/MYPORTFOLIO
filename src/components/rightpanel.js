@@ -10,6 +10,13 @@ class RightPanel extends React.Component{
           {(this.props.data.content!= null)&&
             <>
               <ProjectHeader img = {this.props.data.content.img}/>
+              <ProjectBlock
+                inCase = {true}
+                num = {element.index}
+                mask = {element.mask} 
+                img = {element.img}
+                name={element.name}
+                tags={element.tags}/>
               {this.props.data.content.content.map(
                 (item)=>{
                   return(
@@ -47,7 +54,9 @@ class ImgSection extends React.Component{
 class ProjectHeader extends React.Component{
   render(){
     return(
+      <>
       <img className = 'projectHeader' src = {this.props.img}></img>
+      </>
     )
   }
 }
