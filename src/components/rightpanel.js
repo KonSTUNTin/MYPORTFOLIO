@@ -17,26 +17,39 @@ class RightPanel extends React.Component{
                 img = {element.img}
                 name={element.name}
                 tags={element.tags}/>
+              <div className = 'ProjectContent'>
               {this.props.data.content.content.map(
                 (item)=>{
                   return(
                     <>
                     {(item.type === 'text')&&<TextSection data = {item}/>}
                     {(item.type === 'img')&&<ImgSection data = {item}/>}
+                    {(item.type === 'video')&&<VideoSection data = {item}/>}
                     </>
                   )
                 }
               )}
+              </div>
             </>}
         </div>
       )
       }
   }
+  class VideoSection extends React.Component{
+    render(){
+      return(
+        <div className = {'videoSection ' + this.props.data.class}>
+          <iframe width="560" height="315" src={this.props.data.src +"?controls =0"} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      )
+    }
+  }
+
+
 class ImgSection extends React.Component{
   render(){
-    console.log(this.props.data)
     return(
-      <div className = 'imgSection'>
+      <div className = {'imgSection ' + this.props.data.class}>
         {this.props.data.src.map(
         item=>{
             return(
@@ -55,7 +68,7 @@ class ProjectHeader extends React.Component{
   render(){
     return(
       <>
-      <img className = 'projectHeader' src = {this.props.img}></img>
+      <div className = 'projectHeader' style = {{backgroundImage: 'url(' + this.props.img + ')'}} ></div>
       </>
     )
   }

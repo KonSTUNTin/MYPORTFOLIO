@@ -6,7 +6,7 @@ class LeftColumn extends React.Component{
           <div id ='myPhoto' onClick = {this.props.handler}>
           </div>
           <h1 id = 'aboutMe'>
-            Привет! Меня зовут Костя Остроухов, я проектирую, рендерю и кодю для web будущего
+            Привет!<br/>Меня зовут<br/>Костя Остроухов.<br/>Я проектирую, рендерю и кодю для web.
           </h1>
           <h4 id ='Contacts'>
             {"950-64-99-204 totsamuion@yandex.ru "}

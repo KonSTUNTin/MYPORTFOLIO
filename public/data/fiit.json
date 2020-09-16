@@ -18,8 +18,13 @@
         },
         {
             "type": "img",
-            "class": "come classes",
+            "class": "center",
             "src": ["/images/fiit.png", "/images/fish.png"]
+        },
+        {
+            "type": "img",
+            "class": "wide",
+            "src": ["/images/fish.png", "/images/fish.png"]
         }
 
     ]

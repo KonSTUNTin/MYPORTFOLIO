@@ -18,8 +18,18 @@
         },
         {
             "type": "img",
-            "class": "come classes",
+            "class": "center",
             "src": ["/images/fish.png", "/images/fish.png"]
+        },
+        {
+            "type": "img",
+            "class": "wide",
+            "src": ["/images/fish.png", "/images/fish.png"]
+        },
+        {
+            "type": "video",
+            "class": "wide",
+            "src": "https://www.youtube.com/embed/ksRoh-10lak"
         }
 
     ]

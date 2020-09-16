@@ -1,13 +1,20 @@
 *{
   font-family: 'IBM Plex Sans', sans-serif;
+  margin: 0px;
+  padding: 0px;
 }
 :root{
   --x: 12px;
   --x2: 24px;
   --x3: 36px;
+  --x4: 48px;
   --blue: #DCF9FF;
   --margin: 96px;
   --left: 360px;
+}
+a{
+  color: red;
+  text-decoration: none;
 }
 body{
   background-color: var(--blue);
@@ -24,11 +31,11 @@ h4{
 }
 #MainContainer{
   display: grid;
-  grid-template-columns: var(--margin) var(--left) 3fr var(--margin);
-  width:100%;
-  height:100vh;
-  grid-template-areas: 
-  '. leftColumn projects projects'
+  grid-template-columns: var(--margin) var(--left) 1fr var(--margin);
+  width: 100%;
+  height: 100vh;
+  grid-column-gap: var(--x3);
+  grid-template-areas: '. leftColumn projects projects';
 }
 #LeftColumn{
   grid-area: leftColumn;
@@ -48,6 +55,7 @@ h4{
 }
 div#myPhoto {
   cursor: pointer;
+  margin-bottom: var(--x2);
   background-image: url('/images/avatar.png');
   background-size: auto 100%;
   width: 10vh;
@@ -131,10 +139,14 @@ div#RightPanel {
   background-color: white;
   height: 100vh;
   z-index: 7;
-  width: calc(100vw - (var(--left) + var(--margin)));
+  width: calc(100vw - (var(--left) + var(--margin) + var(--x3) * 2));
   right: 0px;
   transform: translateX(100%);
   transition: transform 500ms;
+  display: grid;
+  grid-template-columns: repeat(9, 11.1%);
+  grid-template-rows: 15vh 25vh 20vh 1fr;
+
 }
 div#RightPanel.active {
   transform: translateX(0%);
@@ -150,6 +162,7 @@ div#RightPanel.active {
   background-image: url(/images/border.svg);
   background-size: 100%;
   background-repeat: no-repeat;
+  z-index: -1;
 }
 div#clipContainer {
   grid-area: projects;
@@ -166,4 +179,74 @@ svg.oval.mask {
 #loadingOutline {
   stroke-dasharray: 83%;
   stroke-dashoffset: 800%;
+}
+.projectHeader {
+  grid-column: 1/10;
+  grid-row: 1/3;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.ProjectBlock.inCase {
+  grid-column: 3;
+  cursor: default;
+  grid-row: 2;
+}
+.ProjectContent {
+  grid-column: 1 / 10;
+  grid-row: 4;
+}
+.textSection {
+  margin-bottom: var(--x2);
+  display: grid;
+  grid-template-columns: repeat(9, 11.1%);
+}
+.textSection h4 {
+  grid-column: 3;
+}
+.textSection p {
+  grid-column: 5 / 8;
+}
+h4#Contacts {
+  margin-top: 90px;
+}
+
+.inCase .projectText {
+  margin-left: 0px;
+}
+
+.inCase svg.mask {
+  transform: translateX(-20%);
+}
+
+.imgSection.center {
+  display: grid;
+  grid-template-columns: repeat(9, 11.1%);
+}
+
+.imgSection.center img {
+  grid-column: 3/8;
+  width: 100%;
+  margin-bottom: var(--x2);
+}
+.imgSection.wide img {
+  grid-column: 1/9;
+  width: 100%;
+  margin-bottom: var(--x2);
+}
+.videoSection {
+  display: grid;
+  margin-bottom: var(--x2);
+  grid-template-columns: repeat(9, 11.1%);
+}
+
+.videoSection.center iframe {
+  grid-column: 3/8;
+  width: 100%;
+}
+
+.videoSection.wide iframe {
+  grid-column: 1/10;
+  width: 100%;
+  min-height: 40vh;
 }
