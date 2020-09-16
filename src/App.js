@@ -8,20 +8,35 @@ class App extends React.Component{
   constructor(props){
     super(props)
     this.state ={
-      status:null
+      status:null,
+      content:null
     }
     this.rightPanelActivate = this.rightPanelActivate.bind(this)
   }
-  rightPanelActivate(){
-    console.log('click')
-    this.setState({status:"active"})
+  async rightPanelActivate(event){
+    
+    if(this.state.status == null){
+      this.setState({status:"active"})
+      let index = event.currentTarget.id
+      let response = await fetch(
+        ProjectsData[index].link, {
+          headers : { 
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+           }}
+        );
+      let data = await response.json();
+      this.setState({content:data})
+    }else{
+      this.setState({status:null, content:null})
+    }
   }
   render() {
     return(
       <div id = 'MainContainer'>
-        <LeftColumn/>
+        <LeftColumn handler = {this.rightPanelActivate}/>
         <Projects handler = {this.rightPanelActivate}/>
-        <RightPanel status = {this.state.status}/>
+        <RightPanel content = {this.state.content} status = {this.state.status}/>
       </div>
     )
   }
@@ -31,7 +46,7 @@ class LeftColumn extends React.Component{
   render(){
     return(
       <div id = 'LeftColumn'>
-        <div id ='myPhoto'>
+        <div id ='myPhoto' onClick = {this.props.handler}>
         </div>
         <h1 id = 'aboutMe'>
           Привет! Меня зовут Костя Остроухов, я проектирую, рендерю и кодю для web будущего
@@ -47,12 +62,11 @@ class LeftColumn extends React.Component{
   }
 }
 
-
 class RightPanel extends React.Component{
   render(){
     return(
       <div className ={this.props.status} id = 'RightPanel'>
-        
+        {(this.props.content!= null)&&<img src = {this.props.content.path}></img>}
       </div>
     )
     }
@@ -67,6 +81,7 @@ class Projects extends React.Component{
           
           return(
            <ProjectBlock 
+            key = {num}
             handler = {this.props.handler}
             mask = {element.mask} 
             img = {element.img} 
@@ -84,9 +99,8 @@ class Projects extends React.Component{
 
 class ProjectBlock extends React.Component{
   render(){
-    
     return(
-      <div className ='ProjectBlock' onClick = {this.props.handler}>
+      <div className ='ProjectBlock' id = {this.props.num} onClick = {this.props.handler}>
         <ProjectText 
           name={this.props.name}
           tags = {this.props.tags}

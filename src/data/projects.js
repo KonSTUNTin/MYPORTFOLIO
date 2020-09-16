@@ -1,7 +1,7 @@
 const ProjectsData = [
     {
         name: 'САЙТ БEЛОЙ БАШНИ',
-        link: '',
+        link: './data/wtower.json',
         tags: [
             '#ANIMATION',
             '#3D',
@@ -12,7 +12,7 @@ const ProjectsData = [
     },
     {
         name: 'САЙТ БEЛОЙ БАШНИ',
-        link: '',
+        link: '/data/wtower.json',
         tags: [
             '#ANIMATION',
             '#3D',
@@ -23,7 +23,7 @@ const ProjectsData = [
     },
     {
         name: 'САЙТ БEЛОЙ БАШНИ',
-        link: '',
+        link: '/data/wtower.json',
         tags: [
             '#ANIMATION',
             '#3D',
@@ -32,29 +32,51 @@ const ProjectsData = [
         mask: 'oval',
         img: './images/instagram.png'
     },
+   
     {
         name: 'САЙТ БEЛОЙ БАШНИ',
-        link: '',
-        tags: [
-            '#ANIMATION',
-            '#3D',
-            '#WEBDESIGN'
-        ],
-        mask: 'cross',
-        img: './images/instagram.png'
-    },
-    {
-        name: 'САЙТ БEЛОЙ БАШНИ',
-        link: '',
+        link: '/data/wtower.json',
         tags: [
             '#ANIMATION',
             '#3D',
             '#WEBDESIGN'
         ],
         mask: 'romb',
-        img: './images/instagram.png'
+        img: './images/movix.png'
     },
-
+    {
+        name: 'САЙТ БEЛОЙ БАШНИ',
+        link: '/data/wtower.json',
+        tags: [
+            '#ANIMATION',
+            '#3D',
+            '#WEBDESIGN'
+        ],
+        mask: 'oval',
+        img: './images/magic.png'
+    },
+    {
+        name: 'САЙТ БEЛОЙ БАШНИ',
+        link: '/data/wtower.json',
+        tags: [
+            '#ANIMATION',
+            '#3D',
+            '#WEBDESIGN'
+        ],
+        mask: 'cross',
+        img: './images/movixvr.png'
+    },
+    {
+        name: 'САЙТ БEЛОЙ БАШНИ',
+        link: '/data/wtower.json',
+        tags: [
+            '#ANIMATION',
+            '#3D',
+            '#WEBDESIGN'
+        ],
+        mask: 'cross',
+        img: './images/casewtower.png'
+    },
    
 ]
 
