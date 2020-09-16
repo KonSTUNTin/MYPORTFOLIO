@@ -43,6 +43,8 @@ h4{
   align-content: center;
   margin-right: var(--margin);
   justify-content: space-evenly;
+  margin-top: 150px;
+  margin-bottom: 160px;
 }
 div#myPhoto {
   cursor: pointer;
@@ -83,16 +85,21 @@ svg.oval.mask use {
 svg{
   cursor: pointer;
   width: 124%;
+  top: 0px;
+  position: absolute;
+  max-width: 500px;
+  transform: translate(-12%, -12%);
 }
 .ProjectBlock:hover path{
  fill:black
 }
 .ProjectBlock {
-  height: 20vw;
+  height: 340px;
   max-width: 40vw;
   min-width: 19vw;
   cursor: pointer;
   position: relative;
+  width: 340px;
 }
 .ProjectBlock:hover {
   z-index: 5;
@@ -105,21 +112,19 @@ svg{
 }
 .projectText {
   display: flex;
-  transform: translate(28%, 60%);
   flex-flow: column;
+  position: relative;
   justify-content: space-between;
-  width: 15vw;
-  height: 11vw;
-  position: absolute;
+  width: 60%;
+  height: 60%;
+  margin-left: 14%;
+  margin-top: 20%;
   color: white;
   opacity: 0;
   z-index: 6;
 }
 svg.circle.mask {
   transform: translate(-10%, -11%);
-}
-.projectText.circle {
-  transform: translate(12%, 43%);
 }
 div#RightPanel {
   position: fixed;
@@ -150,4 +155,16 @@ div#RightPanel.active {
 div#clipContainer {
   grid-area: projects;
   overflow: hidden scroll;
+}
+.tagsContainer {
+  display: flex;
+  flex-flow: column;
+}
+svg.oval.mask {
+  transform: translate(0%,-12%);
+}
+
+#loadingOutline {
+  stroke-dasharray: 83%;
+  stroke-dashoffset: 800%;
 }
