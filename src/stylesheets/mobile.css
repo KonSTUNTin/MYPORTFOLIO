@@ -1,6 +1,9 @@
 @media screen and (max-width: 800px) {
     #LeftColumn {
         position: static;
+        margin-left: var(--x2);
+        margin-right: var(--x2);
+        margin-top: var(--x2);
         background-color: var(--blue);
         grid-area: leftColumn;
         display: flex;
@@ -8,11 +11,22 @@
         z-index: 8;
         justify-content: center;
     }
+    #projectMatrix h2 {
+        text-align: center;
+    }
+    #projectMatrix .tagsContainer {
+        flex-flow: row;
+        justify-content: center;
+    }
     h4#Contacts {
         display: none;
     }
     div#MainContainer {
         display: block;
+        overflow: hidden scroll;
+    }
+    div#MainContainer.hide::-webkit-scrollbar {
+        display: none;
     }
     h1 {
         font-size: 18px;
@@ -45,12 +59,19 @@
         bottom: 0px;
         right: 0px;
         display: block;
+        overflow: hidden scroll;
+    }
+    .ProjectBlock.inCase{
+        margin-left: var(--x2);
+        margin-top: var(--x2);
     }
     .ProjectBlock.inCase svg {
         display:none
     }
     .textSection {
         display: block;
+        margin-left: var(--x2);
+        margin-right: var(--x2);
     }
     .imgSection {
         display: block;
@@ -62,6 +83,17 @@
         height: 30vh;
     }
     div#clipContainer {
-        overflow: hidden visible;
+        overflow: hidden;
+    }
+    .hoverMask {
+        display: none;
+    }
+    svg.oval.mask {
+        transform: translate(8%, -4%);
+    }
+    .closeButton {
+        position: absolute;
+        top: 4vh;
+        margin-left: var(--x2);
     }
 }

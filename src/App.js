@@ -36,11 +36,13 @@ class App extends React.Component{
     
   }
   render() {
+    let myclass ='';
+    if(this.state.status == 'active'){myclass='hide'}
     return(
-      <div id = 'MainContainer'>
+      <div id = 'MainContainer' className = {myclass}>
         <LeftColumn handler = {this.closeRightPanel}/>
         <Projects handler = {this.rightPanelActivate}/>
-        <RightPanel data = {this.state} />
+        <RightPanel handler = {this.closeRightPanel} data = {this.state} />
       </div>
     )
   }

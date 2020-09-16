@@ -127,7 +127,7 @@ render(){
             </>}
 
             <use href={"#" + this.props.shape + this.props.num} fill={'url(#pattern' + this.props.num + ')'}/>
-            <use clipPath={"url(#myClip" + this.props.num + ')'} href={"#" + this.props.shape + this.props.num} fill="black" />
+            <use className = 'hoverMask' clipPath={"url(#myClip" + this.props.num + ')'} href={"#" + this.props.shape + this.props.num} fill="black" />
             </svg>
         )
     

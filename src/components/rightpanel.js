@@ -2,6 +2,7 @@ import React from 'react';
 import ProjectsData from '../data/projects.js'
 import {ProjectBlock} from './projectlayout.js'
 
+
 class RightPanel extends React.Component{
     render(){
       let element = ProjectsData[this.props.data.index];
@@ -10,6 +11,7 @@ class RightPanel extends React.Component{
           {(this.props.data.content!= null)&&
             <>
               <ProjectHeader img = {this.props.data.content.img}/>
+              <CloseButton handler = {this.props.handler}/>
               <ProjectBlock
                 inCase = {true}
                 num = {element.index}
@@ -35,11 +37,23 @@ class RightPanel extends React.Component{
       )
       }
   }
+
+  class CloseButton extends React.Component{
+    render(){
+      return(
+        <div onClick = {this.props.handler} className = 'closeButton'>
+    
+        </div>
+      )
+    }
+  }
+
+
   class VideoSection extends React.Component{
     render(){
       return(
         <div className = {'videoSection ' + this.props.data.class}>
-          <iframe width="560" height="315" src={this.props.data.src +"?controls =0"} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          <iframe width="560" height="315" src={this.props.data.src +"?controls =0"} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
       )
     }
