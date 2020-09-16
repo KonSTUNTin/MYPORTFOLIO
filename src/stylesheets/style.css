@@ -54,9 +54,6 @@ div#myPhoto {
   height: 10vh;
   animation: avatarSwitch 3s infinite step-start;
 }
-svg.oval.mask use {
-  transform: scale(0.0011, 0.001) translate(-10%);
-}
 
 @keyframes avatarSwitch{
   0%{
@@ -90,9 +87,7 @@ svg{
   max-width: 500px;
   transform: translate(-12%, -12%);
 }
-.ProjectBlock:hover path{
- fill:black
-}
+
 .ProjectBlock {
   height: 340px;
   max-width: 40vw;
@@ -107,8 +102,11 @@ svg{
 .ProjectBlock:hover .projectText{
   opacity: 1;
 }
-.ProjectImg:hover path {
-  fill: black
+circle {
+  transition: r 500ms;
+}
+.ProjectBlock:hover circle {
+  r: 150%;
 }
 .projectText {
   display: flex;
