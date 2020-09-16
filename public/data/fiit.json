@@ -1,6 +1,6 @@
 {
     "name": "Название кейса",
-    "img": "/images/wtower_header.jpg",
+    "img": "/images/fiit_header.jpg",
     "content": [
         {
             "type": "link",
@@ -19,7 +19,7 @@
         {
             "type": "img",
             "class": "come classes",
-            "src": ["/images/fish.png", "/images/fish.png"]
+            "src": ["/images/fiit.png", "/images/fish.png"]
         }
 
     ]

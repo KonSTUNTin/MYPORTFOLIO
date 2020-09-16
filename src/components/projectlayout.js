@@ -4,22 +4,24 @@ import ProjectsData from '../data/projects.js'
 class Projects extends React.Component{
     render(){
       return(
-        <div id = 'projectMatrix'>
-          {
-          ProjectsData.map((element, num) => {
-            return(
-             <ProjectBlock 
-                key = {num}
-                handler = {this.props.handler}
-                mask = {element.mask} 
-                img = {element.img} 
-                num = {num} 
-                name={element.name}
-                tags={element.tags}
-              />
-            )
-          })
-          }
+        <div id = 'clipContainer'>
+          <div id = 'projectMatrix'>
+            {
+            ProjectsData.map((element, num) => {
+              return(
+              <ProjectBlock 
+                  key = {num}
+                  handler = {this.props.handler}
+                  mask = {element.mask} 
+                  img = {element.img} 
+                  num = {num} 
+                  name={element.name}
+                  tags={element.tags}
+                />
+              )
+            })
+            }
+          </div>
         </div>
       )
     }

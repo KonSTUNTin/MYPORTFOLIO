@@ -14,9 +14,12 @@ class App extends React.Component{
       index: null,
     }
     this.rightPanelActivate = this.rightPanelActivate.bind(this)
+    this.closeRightPanel = this.closeRightPanel.bind(this)
+  }
+  closeRightPanel(){
+    this.setState({status:null, content:null, index: null})
   }
   async rightPanelActivate(event){
-    if(this.state.status == null){
       let index = event.currentTarget.id
       let response = await fetch(
         ProjectsData[index].link, {
@@ -27,14 +30,12 @@ class App extends React.Component{
         );
       let data = await response.json();
       this.setState({content:data, status:"active", index: index})
-    }else{
-      this.setState({status:null, content:null, index: null})
-    }
+    
   }
   render() {
     return(
       <div id = 'MainContainer'>
-        <LeftColumn handler = {this.rightPanelActivate}/>
+        <LeftColumn handler = {this.closeRightPanel}/>
         <Projects handler = {this.rightPanelActivate}/>
         <RightPanel data = {this.state} />
       </div>

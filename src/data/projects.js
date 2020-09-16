@@ -12,7 +12,7 @@ const ProjectsData = [
     },
     {
         name: 'САЙТ БEЛОЙ БАШНИ',
-        link: '/data/wtower.json',
+        link: '/data/fiit.json',
         tags: [
             '#ANIMATION',
             '#3D',
