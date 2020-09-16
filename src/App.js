@@ -1,6 +1,9 @@
 import React from 'react';
 import ProjectsData from './data/projects.js'
-import './stylesheets/style.css';
+import './stylesheets/main.css';
+import './stylesheets/desktop.css';
+import './stylesheets/mobile.css';
+
 import LeftColumn from './components/leftcolumn.js';
 import RightPanel from './components/rightpanel.js';
 import {Projects} from './components/projectlayout.js';

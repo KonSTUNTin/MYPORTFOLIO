@@ -39,7 +39,7 @@ class RightPanel extends React.Component{
     render(){
       return(
         <div className = {'videoSection ' + this.props.data.class}>
-          <iframe width="560" height="315" src={this.props.data.src +"?controls =0"} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="560" height="315" src={this.props.data.src +"?controls =0"} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
       )
     }
@@ -77,7 +77,7 @@ class ProjectHeader extends React.Component{
 class TextSection extends React.Component{
   render(){
     return(
-      <div class = 'textSection'>
+      <div className = 'textSection'>
         <h4>
           {this.props.data.header}
         </h4>

@@ -10,9 +10,9 @@ class LeftColumn extends React.Component{
           </h1>
           <h4 id ='Contacts'>
             {"950-64-99-204 totsamuion@yandex.ru "}
-            <a href = 'https://t.me/Kostya_Ostro'>TELEGRAM</a>
+            <a target = 'blank' href = 'https://t.me/Kostya_Ostro'>TELEGRAM</a>
             {' '}
-            <a href = 'https://www.facebook.com/totsamuion/'>FACEBOOK</a>
+            <a target = 'blank' href = 'https://www.facebook.com/totsamuion/'>FACEBOOK</a>
           </h4>
         </div>
       )

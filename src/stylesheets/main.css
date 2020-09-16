@@ -1,0 +1,21 @@
+*{
+  font-family: 'IBM Plex Sans', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+:root{
+  --x: 12px;
+  --x2: 24px;
+  --x3: 36px;
+  --x4: 48px;
+  --blue: #DCF9FF;
+  --margin: 96px;
+  --left: 360px;
+}
+a{
+  color: red;
+  text-decoration: none;
+}
+body{
+  background-color: var(--blue);
+}

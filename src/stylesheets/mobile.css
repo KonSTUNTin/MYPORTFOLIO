@@ -1,0 +1,67 @@
+@media screen and (max-width: 800px) {
+    #LeftColumn {
+        position: static;
+        background-color: var(--blue);
+        grid-area: leftColumn;
+        display: flex;
+        flex-flow: column;
+        z-index: 8;
+        justify-content: center;
+    }
+    h4#Contacts {
+        display: none;
+    }
+    div#MainContainer {
+        display: block;
+    }
+    h1 {
+        font-size: 18px;
+    }
+    div#projectMatrix {
+        
+        margin: 0px;
+        margin-top: 10vh;
+    }
+    .ProjectBlock {
+        max-width: 90vw;
+        height: auto;
+        display: flex;
+        flex-flow: column-reverse;
+    }
+    svg {
+        position: static;
+    }
+    .projectText {
+        opacity: 1;
+        margin: 0px;
+        width: 100%;
+        color: black;
+        margin-bottom: 72px;
+    }
+    div#RightPanel {
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        bottom: 0px;
+        right: 0px;
+        display: block;
+    }
+    .ProjectBlock.inCase svg {
+        display:none
+    }
+    .textSection {
+        display: block;
+    }
+    .imgSection {
+        display: block;
+    }
+    .videoSection {
+        display: block;
+    }
+    .projectHeader {
+        height: 30vh;
+    }
+    div#clipContainer {
+        overflow: hidden visible;
+    }
+}
