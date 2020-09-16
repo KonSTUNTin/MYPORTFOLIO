@@ -9,14 +9,14 @@ class App extends React.Component{
     super(props)
     this.state ={
       status:null,
-      content:null
+      content:null,
+      index: null,
     }
     this.rightPanelActivate = this.rightPanelActivate.bind(this)
   }
   async rightPanelActivate(event){
     
     if(this.state.status == null){
-      this.setState({status:"active"})
       let index = event.currentTarget.id
       let response = await fetch(
         ProjectsData[index].link, {
@@ -26,9 +26,9 @@ class App extends React.Component{
            }}
         );
       let data = await response.json();
-      this.setState({content:data})
+      this.setState({content:data, status:"active", index: index})
     }else{
-      this.setState({status:null, content:null})
+      this.setState({status:null, content:null, index: null})
     }
   }
   render() {
@@ -36,7 +36,7 @@ class App extends React.Component{
       <div id = 'MainContainer'>
         <LeftColumn handler = {this.rightPanelActivate}/>
         <Projects handler = {this.rightPanelActivate}/>
-        <RightPanel content = {this.state.content} status = {this.state.status}/>
+        <RightPanel data = {this.state} />
       </div>
     )
   }
@@ -64,9 +64,16 @@ class LeftColumn extends React.Component{
 
 class RightPanel extends React.Component{
   render(){
+    let element = ProjectsData[this.props.data.index];
     return(
-      <div className ={this.props.status} id = 'RightPanel'>
-        {(this.props.content!= null)&&<img src = {this.props.content.path}></img>}
+      <div className ={this.props.data.status} id = 'RightPanel'>
+        {(this.props.data.content!= null)&&
+          <ProjectBlock
+            mask = {element.mask} 
+            img = {element.img}
+            name={element.name}
+            tags={element.tags}
+            />}
       </div>
     )
     }
