@@ -20,7 +20,7 @@ class App extends React.Component{
     this.closeRightPanel = this.closeRightPanel.bind(this)
   }
   closeRightPanel(){
-    this.setState({status:null, content:null, index: null})
+    (this.state.status === "active")&&this.setState({status: null, content: null, index: null})
   }
   async rightPanelActivate(event){
       let index = event.currentTarget.id

@@ -84,6 +84,7 @@
     }
     div#clipContainer {
         overflow: hidden;
+        height: initial;
     }
     .hoverMask {
         display: none;
@@ -95,5 +96,8 @@
         position: absolute;
         top: 4vh;
         margin-left: var(--x2);
+    }
+    div#RightPanel {
+        left: 0px;
     }
 }

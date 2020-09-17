@@ -168,7 +168,9 @@ div#RightPanel.active {
 
 div#clipContainer {
     grid-area: projects;
-    overflow: hidden scroll;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 100vh;
 }
 
 .tagsContainer {
@@ -241,7 +243,7 @@ h4#Contacts {
 }
 
 .imgSection.wide img {
-    grid-column: 1/9;
+    grid-column: 1/10;
     width: 100%;
     margin-bottom: var(--x2);
 }
