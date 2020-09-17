@@ -1,6 +1,6 @@
 const ProjectsData = [
     {
-        name: 'САЙТ БEЛОЙ БАШНИ',
+        name: 'WEBVR САЙТ БEЛОЙ БАШНИ',
         link: '/data/wtower.json',
         tags: [
             '#ANIMATION',
@@ -8,10 +8,10 @@ const ProjectsData = [
             '#WEBDESIGN'
         ],
         mask: 'flower',
-        img: './images/whitetower.png'
+        img: './images/wtower.jpg'
     },
     {
-        name: 'САЙТ БEЛОЙ БАШНИ',
+        name: 'Айдентика ФИИТ',
         link: '/data/fiit.json',
         tags: [
             '#ANIMATION',
@@ -19,10 +19,10 @@ const ProjectsData = [
             '#WEBDESIGN'
         ],
         mask: 'circle',
-        img: './images/fiit.png'
+        img: './images/fiit.jpg'
     },
     {
-        name: 'САЙТ БEЛОЙ БАШНИ',
+        name: 'Генеративный дизайн',
         link: '../data/wtower.json',
         tags: [
             '#ANIMATION',
@@ -30,11 +30,11 @@ const ProjectsData = [
             '#WEBDESIGN'
         ],
         mask: 'oval',
-        img: './images/instagram.png'
+        img: './images/insta.jpg'
     },
    
     {
-        name: 'САЙТ БEЛОЙ БАШНИ',
+        name: 'Дизайн интерфейсов приставки MOVIX',
         link: '/data/wtower.json',
         tags: [
             '#ANIMATION',
@@ -42,10 +42,10 @@ const ProjectsData = [
             '#WEBDESIGN'
         ],
         mask: 'romb',
-        img: './images/movix.png'
+        img: './images/movix.jpg'
     },
     {
-        name: 'САЙТ БEЛОЙ БАШНИ',
+        name: 'Сайт AR VR направления Jetstyle',
         link: '/data/wtower.json',
         tags: [
             '#ANIMATION',
@@ -53,7 +53,18 @@ const ProjectsData = [
             '#WEBDESIGN'
         ],
         mask: 'oval',
-        img: './images/magic.png'
+        img: './images/magic.jpg'
+    },
+    {
+        name: 'Movix VR',
+        link: '/data/wtower.json',
+        tags: [
+            '#ANIMATION',
+            '#3D',
+            '#WEBDESIGN'
+        ],
+        mask: 'cross',
+        img: './images/movix_vr.jpg'
     },
     {
         name: 'САЙТ БEЛОЙ БАШНИ',
@@ -64,7 +75,7 @@ const ProjectsData = [
             '#WEBDESIGN'
         ],
         mask: 'cross',
-        img: './images/movixvr.png'
+        img: './images/rimeks.jpg'
     },
     {
         name: 'САЙТ БEЛОЙ БАШНИ',
@@ -75,86 +86,8 @@ const ProjectsData = [
             '#WEBDESIGN'
         ],
         mask: 'cross',
-        img: './images/casewtower.png'
-    },
-    {
-        name: 'САЙТ БEЛОЙ БАШНИ',
-        link: '/data/wtower.json',
-        tags: [
-            '#ANIMATION',
-            '#3D',
-            '#WEBDESIGN'
-        ],
-        mask: 'flower',
-        img: './images/whitetower.png'
-    },
-    {
-        name: 'САЙТ БEЛОЙ БАШНИ',
-        link: '/data/fiit.json',
-        tags: [
-            '#ANIMATION',
-            '#3D',
-            '#WEBDESIGN'
-        ],
-        mask: 'circle',
-        img: './images/fiit.png'
-    },
-    {
-        name: 'САЙТ БEЛОЙ БАШНИ',
-        link: '../data/wtower.json',
-        tags: [
-            '#ANIMATION',
-            '#3D',
-            '#WEBDESIGN'
-        ],
-        mask: 'oval',
-        img: './images/instagram.png'
-    },
-   
-    {
-        name: 'САЙТ БEЛОЙ БАШНИ',
-        link: '/data/wtower.json',
-        tags: [
-            '#ANIMATION',
-            '#3D',
-            '#WEBDESIGN'
-        ],
-        mask: 'romb',
-        img: './images/movix.png'
-    },
-    {
-        name: 'САЙТ БEЛОЙ БАШНИ',
-        link: '/data/wtower.json',
-        tags: [
-            '#ANIMATION',
-            '#3D',
-            '#WEBDESIGN'
-        ],
-        mask: 'oval',
-        img: './images/magic.png'
-    },
-    {
-        name: 'САЙТ БEЛОЙ БАШНИ',
-        link: '/data/wtower.json',
-        tags: [
-            '#ANIMATION',
-            '#3D',
-            '#WEBDESIGN'
-        ],
-        mask: 'cross',
-        img: './images/movixvr.png'
-    },
-    {
-        name: 'САЙТ БEЛОЙ БАШНИ',
-        link: '/data/wtower.json',
-        tags: [
-            '#ANIMATION',
-            '#3D',
-            '#WEBDESIGN'
-        ],
-        mask: 'cross',
-        img: './images/casewtower.png'
-    },
+        img: './images/case_wtower.jpg'
+    }
    
 ]
 

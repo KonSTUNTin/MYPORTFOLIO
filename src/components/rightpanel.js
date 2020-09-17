@@ -44,7 +44,8 @@ class RightPanel extends React.Component{
     render(){
       return(
         <div onClick = {this.props.handler} className = 'closeButton'>
-    
+             <div className = 'crossIcon'/>
+            <span>ЗАКРЫТЬ</span>
         </div>
       )
     }

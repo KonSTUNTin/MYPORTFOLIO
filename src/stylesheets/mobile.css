@@ -41,6 +41,7 @@
         max-width: 90vw;
         height: auto;
         display: flex;
+        width: 100%;
         flex-flow: column-reverse;
     }
     svg {
@@ -81,7 +82,7 @@
         display: block;
     }
     .projectHeader {
-        height: 30vh;
+        height: 50vh;
     }
     div#clipContainer {
         overflow: hidden;
@@ -95,8 +96,8 @@
     }
     .closeButton {
         position: absolute;
-        top: 4vh;
-        margin-left: var(--x2);
+        top: calc(50vh - var(--x2));
+        margin-left: var( --x2);
     }
     div#RightPanel {
         left: 0px;
@@ -104,6 +105,10 @@
     h1#aboutMe br {
         display: none;
     }
+    h1#aboutMe br.mobile {
+        display: block;
+    }
+
     .MobileUpButton {
         flex-direction: row;
         align-items: center;
@@ -134,6 +139,7 @@
     }
     .inCase h2{
         margin-top: var(--x);
+        font-size: var(--x3);
     }
     .textSection h4{
         margin-bottom: var(--x);
@@ -144,5 +150,15 @@
     }
     .inCase .tag {
         margin-right: var(--x);
+    }
+    .closeButton span {
+        display: block;
+        color: red;
+        margin: 0 var(--x);
+        
+    }
+    
+    .crossIcon {
+        background-size: 50%;
     }
 }

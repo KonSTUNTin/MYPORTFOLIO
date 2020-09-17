@@ -53,10 +53,10 @@ class App extends React.Component{
   }
   scrollHandler(event){
     let scroll = event.target.scrollTop;
-    if((scroll > 100)&&(this.state.scroll == null)){
+    if((scroll > 100)&&(this.state.scroll === null)){
       this.setState({scroll: 'active'})
     }else{
-      if((scroll< 100)&&(this.state.scroll == 'active')){
+      if((scroll< 100)&&(this.state.scroll === 'active')){
         this.setState({scroll: null})
       }
     }
@@ -70,7 +70,7 @@ class App extends React.Component{
   }
   render() {
     let myclass ='';
-    if(this.state.status == 'active'){myclass='hide'}
+    if(this.state.status === 'active'){myclass='hide'}
     return(
       <div id = 'MainContainer' ref = {this.myref} onScroll = {this.scrollHandler} className = {myclass}>
         {(this.state.loaderProgress < 1)&&<Loader progress = {this.state.loaderProgress}></Loader>}
@@ -92,7 +92,7 @@ class Loader extends React.Component{
     this.loop = this.loop.bind(this);
     
   }
-  componentWillMount(){
+  componentDidMount(){
     this.raf = requestAnimationFrame(this.loop)
   }
   loop(){
