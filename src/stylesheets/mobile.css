@@ -21,6 +21,8 @@
     #projectMatrix .tagsContainer {
         flex-flow: row;
         justify-content: center;
+        flex-wrap: wrap;
+        justify-items: center;
     }
     div#MainContainer {
         display: block;
@@ -123,6 +125,7 @@
         display: flex;
     }
     .MobileUpButton span{
+        cursor:pointer;
         color: red;
         text-transform: uppercase;
     }
@@ -147,6 +150,9 @@
     .inCase .tagsContainer {
         display: flex;
         flex-flow: row;
+        justify-content: flex-start;
+        justify-items: flex-start;
+        flex-wrap: wrap;
     }
     .inCase .tag {
         margin-right: var(--x);
