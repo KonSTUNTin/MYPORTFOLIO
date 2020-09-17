@@ -33,3 +33,9 @@ body{
   background-color: var(--blue);
   position: fixed;
 }
+span.red {
+  color: red;
+}
+.Loader h1 {
+  letter-spacing: 5vw;
+}

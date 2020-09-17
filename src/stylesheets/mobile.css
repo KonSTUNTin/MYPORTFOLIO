@@ -64,7 +64,7 @@
     }
     .ProjectBlock.inCase{
         margin-left: var(--x2);
-        margin-top: var(--x2);
+        margin-top: var(--x4);
     }
     .ProjectBlock.inCase svg {
         display:none
@@ -128,5 +128,21 @@
         background-size: auto 100%;
         background-repeat: no-repeat;
         animation: avatarSwitch 3s infinite step-start;
+    }
+    .inCase .projectText {
+        margin-bottom: var(--x4);
+    }
+    .inCase h2{
+        margin-top: var(--x);
+    }
+    .textSection h4{
+        margin-bottom: var(--x);
+      }
+    .inCase .tagsContainer {
+        display: flex;
+        flex-flow: row;
+    }
+    .inCase .tag {
+        margin-right: var(--x);
     }
 }

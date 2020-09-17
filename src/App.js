@@ -83,17 +83,46 @@ class App extends React.Component{
   }
 }
 
-
-
-
 class Loader extends React.Component{
+  constructor(props){
+    super(props)
+    this.state = {
+      time: 0
+    }
+    this.loop = this.loop.bind(this);
+    
+  }
+  componentWillMount(){
+    this.raf = requestAnimationFrame(this.loop)
+  }
+  loop(){
+    console.log('rraf')
+    let time = this.state.time + .1
+    this.setState({time: time})
+    if(this.props.progress<1){this.raf = requestAnimationFrame(this.loop)}
+  }
+  componentWillUnmount(){
+    cancelAnimationFrame(this.raf)
+  }
   render(){
+    let star = convertUnicode("\u2738")
+    let string = "ЗAГРУЗКА"
+    let progress = Math.floor(this.state.time) % (string.length + 1)
+    let stringStart = string.slice(0, progress)
+    let stringEnd = string.slice(progress, string.length)
     return(
       <div className = 'Loader'>
-        {"Загрузка " + Math.round(this.props.progress * 100) + '%'}
+        <h1>{stringStart}<span class ='red'>{star}</span>{stringEnd}</h1>
       </div>
     )
   }
+}
+
+function convertUnicode(input) {
+  return input.replace(/\\u(\w\w\w\w)/g,function(a,b) {
+    var charcode = parseInt(b,16);
+    return String.fromCharCode(charcode);
+  });
 }
 
 export default App;
