@@ -4,38 +4,40 @@ import {ProjectBlock} from './projectlayout.js'
 
 
 class RightPanel extends React.Component{
-    render(){
-      let element = ProjectsData[this.props.data.index];
-      return(
-        <div className ={this.props.data.status} id = 'RightPanel'>
-          {(this.props.data.content!= null)&&
-            <>
-              <ProjectHeader img = {this.props.data.content.img}/>
-              <CloseButton handler = {this.props.handler}/>
-              <ProjectBlock
-                inCase = {true}
-                num = {element.index}
-                mask = {element.mask} 
-                img = {element.img}
-                name={element.name}
-                tags={element.tags}/>
-              <div className = 'ProjectContent'>
-              {this.props.data.content.content.map(
-                (item)=>{
-                  return(
-                    <>
-                    {(item.type === 'text')&&<TextSection data = {item}/>}
-                    {(item.type === 'img')&&<ImgSection data = {item}/>}
-                    {(item.type === 'video')&&<VideoSection data = {item}/>}
-                    </>
-                  )
-                }
-              )}
-              </div>
-            </>}
-        </div>
-      )
-      }
+  
+  
+  render(){
+    let element = ProjectsData[this.props.data.index];
+    return(
+      <div ref = {this.props.linkRef} className ={this.props.data.status} id = 'RightPanel'>
+        {(this.props.data.content!= null)&&
+          <>
+            <ProjectHeader img = {this.props.data.content.img}/>
+            <CloseButton handler = {this.props.handler}/>
+            <ProjectBlock
+              inCase = {true}
+              num = {element.index}
+              mask = {element.mask} 
+              img = {element.img}
+              name={element.name}
+              tags={element.tags}/>
+            <div className = 'ProjectContent'>
+            {this.props.data.content.content.map(
+              (item)=>{
+                return(
+                  <>
+                  {(item.type === 'text')&&<TextSection data = {item}/>}
+                  {(item.type === 'img')&&<ImgSection data = {item}/>}
+                  {(item.type === 'video')&&<VideoSection data = {item}/>}
+                  </>
+                )
+              }
+            )}
+            </div>
+          </>}
+      </div>
+    )
+    }
   }
 
   class CloseButton extends React.Component{

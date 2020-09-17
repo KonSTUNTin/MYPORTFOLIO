@@ -104,4 +104,29 @@
     h1#aboutMe br {
         display: none;
     }
+    .MobileUpButton {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: var(--x) var(--x2);
+        position: fixed;
+        background-color: rgba(255,255,255,.9);
+        width: calc(100% - var(--x4));
+        z-index: 8;
+    }
+    .MobileUpButton.active {
+        display: flex;
+    }
+    .MobileUpButton span{
+        color: red;
+        text-transform: uppercase;
+    }
+    div#logo {
+        width: 62px;
+        height: 62px;
+        background-image: url(/images/avatar.png);
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        animation: avatarSwitch 3s infinite step-start;
+    }
 }

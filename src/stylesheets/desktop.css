@@ -10,6 +10,10 @@ h4 {
     text-transform: uppercase;
 }
 
+.MobileUpButton {
+    display: none;
+  }
+
 #MainContainer {
     display: grid;
     grid-template-columns: var(--margin) var(--left) 1fr var(--margin);
@@ -52,24 +56,20 @@ div#myPhoto {
         background-position: 0% 0%;
     }
 
-    20% {
+    25% {
         background-position: 25% 0%;
     }
 
-    40% {
+    50% {
         background-position: 50% 0%;
     }
 
-    60% {
+    75% {
         background-position: 75% 0%;
     }
 
-    80% {
-        background-position: 100% 0%;
-    }
-
     100% {
-        background-position: 125% 0%;
+        background-position: 100% 0%;
     }
 }
 
