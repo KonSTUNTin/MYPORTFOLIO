@@ -3,9 +3,10 @@ const ProjectsData = [
         name: 'WEBVR САЙТ БEЛОЙ БАШНИ',
         link: '/data/wtower.json',
         tags: [
-            '#ANIMATION',
-            '#3D',
-            '#WEBDESIGN'
+            'ANIMATION',
+            '3D',
+            'WEB DESIGN',
+            'CODING'
         ],
         mask: 'flower',
         img: './images/wtower.jpg'
@@ -14,9 +15,10 @@ const ProjectsData = [
         name: 'Айдентика ФИИТ',
         link: '/data/fiit.json',
         tags: [
-            '#ANIMATION',
-            '#3D',
-            '#WEBDESIGN'
+            'ANIMATION',
+            'WEB DESIGN',
+            'CODING',
+            'BRANDING'
         ],
         mask: 'circle',
         img: './images/fiit.jpg'
@@ -25,9 +27,9 @@ const ProjectsData = [
         name: 'Генеративный дизайн',
         link: '../data/wtower.json',
         tags: [
-            '#ANIMATION',
-            '#3D',
-            '#WEBDESIGN'
+            'ANIMATION',
+            '3D',
+            'CODING'
         ],
         mask: 'oval',
         img: './images/insta.jpg'
@@ -37,9 +39,8 @@ const ProjectsData = [
         name: 'Дизайн интерфейсов приставки MOVIX',
         link: '/data/wtower.json',
         tags: [
-            '#ANIMATION',
-            '#3D',
-            '#WEBDESIGN'
+            'WEB DESIGN',
+            'PRODUCT'
         ],
         mask: 'romb',
         img: './images/movix.jpg'
@@ -48,9 +49,10 @@ const ProjectsData = [
         name: 'Сайт AR VR направления Jetstyle',
         link: '/data/wtower.json',
         tags: [
-            '#ANIMATION',
-            '#3D',
-            '#WEBDESIGN'
+            'ANIMATION',
+            '3D',
+            'WEB DESIGN',
+            'CODING'
         ],
         mask: 'oval',
         img: './images/magic.jpg'
@@ -59,31 +61,30 @@ const ProjectsData = [
         name: 'Movix VR',
         link: '/data/wtower.json',
         tags: [
-            '#ANIMATION',
-            '#3D',
-            '#WEBDESIGN'
+            'ANIMATION',
+            '3D',
+            'WEB DESIGN',
+            'CODING'
         ],
         mask: 'cross',
         img: './images/movix_vr.jpg'
     },
     {
-        name: 'САЙТ БEЛОЙ БАШНИ',
+        name: 'САЙТ RIMEKS',
         link: '/data/wtower.json',
         tags: [
-            '#ANIMATION',
-            '#3D',
-            '#WEBDESIGN'
+            'WEB DESIGN',
+            'PRODUCT'
         ],
         mask: 'cross',
         img: './images/rimeks.jpg'
     },
     {
-        name: 'САЙТ БEЛОЙ БАШНИ',
+        name: 'КЕЙС БЕЛОЙ БАШНИ',
         link: '/data/wtower.json',
         tags: [
-            '#ANIMATION',
-            '#3D',
-            '#WEBDESIGN'
+            'ANIMATION',
+            'WEB DESIGN'
         ],
         mask: 'cross',
         img: './images/case_wtower.jpg'

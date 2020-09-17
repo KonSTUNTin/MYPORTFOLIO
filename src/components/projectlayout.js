@@ -3,29 +3,99 @@ import ProjectsData from '../data/projects.js'
 import {Mask, StaticMask} from './maskshapes.js'
 
 
-class Projects extends React.Component{  
+class Projects extends React.Component{ 
+  constructor(props){
+    super(props);
+    this.state = {
+      filter: ["0"]
+    }
+    this.tags4filter = [
+      'ALL',
+      '3D',
+      'WEB DESIGN',
+      'ANIMATION',
+      'PRODUCT',
+      'CODING',
+      'BRANDING'
+    ]
+    this.tagManager = this.tagManager.bind(this)
+  }
+  tagManager(event){
+    let index = event.target.id;
+    let arrayOfTags = this.state.filter;
+    let find = arrayOfTags.indexOf(index)
+    if(find===-1){
+      if(index!='0'){
+        if(arrayOfTags.indexOf("0")>-1){
+          arrayOfTags.splice(arrayOfTags.indexOf("0"), 1)
+        }
+        arrayOfTags.push(index)
+      }else{
+        arrayOfTags = ["0"]
+      }
+    }else{
+      arrayOfTags.splice(find, 1)
+    }
+    if(arrayOfTags.length===0)arrayOfTags=['0']
+    this.setState({filter:arrayOfTags})
+  }
   render(){
     return(
       <div id = 'clipContainer'>
         <div id = 'projectMatrix'>
+         <ProjectFilter filter = {this.state.filter} handler = {this.tagManager} tags4filter = {this.tags4filter}></ProjectFilter>
           {
           ProjectsData.map((element, num) => {
-            return(
-            <ProjectBlock 
-                key = {num}
-                inCase = {false}
-                loaderHandler = {this.props.loaderHandler}
-                handler = {this.props.handler}
-                mask = {element.mask} 
-                img = {element.img} 
-                num = {num} 
-                name={element.name}
-                tags={element.tags}
-              />
-            )
+
+            let check = 0;
+            if(this.state.filter.indexOf("0")==-1){
+              this.state.filter.map((index)=>{
+                if(element.tags.indexOf(this.tags4filter[index])>-1){check++}
+              })
+            }else{
+              check = 1
+            }
+    
+            if(check===this.state.filter.length){
+              return(
+                <ProjectBlock 
+                    key = {num}
+                    inCase = {false}
+                    loaderHandler = {this.props.loaderHandler}
+                    handler = {this.props.handler}
+                    mask = {element.mask} 
+                    img = {element.img} 
+                    num = {num} 
+                    name={element.name}
+                    tags={element.tags}
+                  />
+                )
+            }
+            
           })
           }
         </div>
+      </div>
+    )
+  }
+}
+
+class ProjectFilter extends React.Component{
+  render(){
+    return(
+      <div id = 'filter'>
+        {
+        this.props.tags4filter.map((item, index)=>{
+          let status ='';
+          if(this.props.filter.indexOf(index.toString())>-1){status='active'}
+          return(
+            <span onClick = {this.props.handler} id = {index} key = {index} className = {'tag ' + status}>
+            {(status=='active')&&'#'}
+            {item}
+            </span>
+          )
+        })
+        }
       </div>
     )
   }
@@ -73,7 +143,7 @@ class ProjectText extends React.Component{
           {this.props.tags.map(item=>{
             return(
               <span className = 'tag'>
-                {item}
+                {'#' + item}
               </span>
             )
           })}

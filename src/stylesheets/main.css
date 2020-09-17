@@ -333,3 +333,23 @@ h4#Contacts {
 .closeButton span {
   display: none;
 }
+div#filter {
+  margin-bottom: 96px;
+}
+span.active.tag {
+  color: red;
+}
+#filter span.tag {
+  padding: var(--x);
+  cursor: pointer
+}
+div#filter {
+  display: flex;
+  flex-flow: row;
+  align-items: baseline;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  flex-wrap: wrap;
+  width:100%
+}

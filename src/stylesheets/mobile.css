@@ -161,4 +161,7 @@
     .crossIcon {
         background-size: 50%;
     }
+    div#filter {
+        display: none;
+    }
 }
