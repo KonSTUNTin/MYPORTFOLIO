@@ -33,7 +33,7 @@ class App extends React.Component{
   }
   loaderUpdate(){
     this.loaded ++
-    let progress = 1//this.loaded / this.loadNum ;
+    let progress = this.loaded / this.loadNum ;
     this.setState({loaderProgress: progress})
   }
   closeRightPanel(){
