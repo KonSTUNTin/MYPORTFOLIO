@@ -19,3 +19,17 @@ a{
 body{
   background-color: var(--blue);
 }
+.Loader {
+  width: 100vw;
+  height: 100vh;
+  left: 0px;
+  z-index: 10;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--blue);
+  position: fixed;
+}

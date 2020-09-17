@@ -8,7 +8,7 @@ class Mask extends React.Component{
                   <pattern id={"pattern" + this.props.num} patternContentUnits="objectBoundingBox" width="1" height="1">
                   <use href={"#image" + this.props.num} transform="scale(.001)"/>
                   </pattern>
-                  <image id ={"image" + this.props.num} x="0" y="0" height="1024" width="1024" href={this.props.img}/>
+                  <image id ={"image" + this.props.num} x="0" y="0" height="1024" width="1024" onLoad = {this.props.loaderHandler} href={this.props.img}/>
                 </defs>
                 <clipPath id={"myClip" + this.props.num}>
                   <circle 
@@ -28,7 +28,7 @@ class Mask extends React.Component{
     
                 {(this.props.shape == 'circle')&&<>
                   <CircleShape id = {this.props.num}/> 
-                  <path id = {'loadingOutline' + this.props.num} d="M395.5 207C395.5 311.106 311.106 395.5 207 395.5C102.894 395.5 18.5 311.106 18.5 207C18.5 102.894 102.894 18.5 207 18.5C311.106 18.5 395.5 102.894 395.5 207Z" />
+                  {/* <path id = {'loadingOutline' + this.props.num} d="M395.5 207C395.5 311.106 311.106 395.5 207 395.5C102.894 395.5 18.5 311.106 18.5 207C18.5 102.894 102.894 18.5 207 18.5C311.106 18.5 395.5 102.894 395.5 207Z" /> */}
                 </>}
     
                 {(this.props.shape == 'oval')&&<>

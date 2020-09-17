@@ -3,31 +3,32 @@ import ProjectsData from '../data/projects.js'
 import {Mask, StaticMask} from './maskshapes.js'
 
 
-class Projects extends React.Component{
-    render(){
-      return(
-        <div id = 'clipContainer'>
-          <div id = 'projectMatrix'>
-            {
-            ProjectsData.map((element, num) => {
-              return(
-              <ProjectBlock 
-                  key = {num}
-                  inCase = {false}
-                  handler = {this.props.handler}
-                  mask = {element.mask} 
-                  img = {element.img} 
-                  num = {num} 
-                  name={element.name}
-                  tags={element.tags}
-                />
-              )
-            })
-            }
-          </div>
+class Projects extends React.Component{  
+  render(){
+    return(
+      <div id = 'clipContainer'>
+        <div id = 'projectMatrix'>
+          {
+          ProjectsData.map((element, num) => {
+            return(
+            <ProjectBlock 
+                key = {num}
+                inCase = {false}
+                loaderHandler = {this.props.loaderHandler}
+                handler = {this.props.handler}
+                mask = {element.mask} 
+                img = {element.img} 
+                num = {num} 
+                name={element.name}
+                tags={element.tags}
+              />
+            )
+          })
+          }
         </div>
-      )
-    }
+      </div>
+    )
+  }
 }
   
 class ProjectBlock extends React.Component{
@@ -57,7 +58,7 @@ class ProjectBlock extends React.Component{
                   (this.props.inCase)&&<StaticMask shape = {this.props.mask} num = {this.props.num}/>
                 }
                 {
-                  (!this.props.inCase)&&<Mask shape = {this.props.mask} img = {this.props.img}  num = {this.props.num}/>
+                  (!this.props.inCase)&&<Mask loaderHandler = {this.props.loaderHandler} shape = {this.props.mask} img = {this.props.img}  num = {this.props.num}/>
                 }
             </div>
         )
