@@ -1,15 +1,19 @@
 @media screen and (max-width: 800px) {
     #LeftColumn {
+        margin: var(--x2);
         position: static;
-        margin-left: var(--x2);
-        margin-right: var(--x2);
-        margin-top: var(--x2);
         background-color: var(--blue);
         grid-area: leftColumn;
         display: flex;
         flex-flow: column;
         z-index: 8;
-        justify-content: center;
+    }
+    h4#Contacts {
+        margin-top: var(--x2);
+        font-size: 18px;
+    }
+    #Contacts::before{
+        display: none;
     }
     #projectMatrix h2 {
         text-align: center;
@@ -17,9 +21,6 @@
     #projectMatrix .tagsContainer {
         flex-flow: row;
         justify-content: center;
-    }
-    h4#Contacts {
-        display: none;
     }
     div#MainContainer {
         display: block;
@@ -99,5 +100,8 @@
     }
     div#RightPanel {
         left: 0px;
+    }
+    h1#aboutMe br {
+        display: none;
     }
 }
