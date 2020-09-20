@@ -96,7 +96,6 @@ class Loader extends React.Component{
     this.raf = requestAnimationFrame(this.loop)
   }
   loop(){
-    console.log('rraf')
     let time = this.state.time + .1
     this.setState({time: time})
     if(this.props.progress<1){this.raf = requestAnimationFrame(this.loop)}
@@ -112,7 +111,7 @@ class Loader extends React.Component{
     let stringEnd = string.slice(progress, string.length)
     return(
       <div className = 'Loader'>
-        <h1>{stringStart}<span class ='red'>{star}</span>{stringEnd}</h1>
+        <h1>{stringStart}<span className ='red'>{star}</span>{stringEnd}</h1>
       </div>
     )
   }

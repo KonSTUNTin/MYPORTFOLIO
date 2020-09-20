@@ -36,8 +36,8 @@ const ProjectsData = [
     },
    
     {
-        name: 'Дизайн интерфейсов приставки MOVIX',
-        link: '/data/wtower.json',
+        name: 'MOVIX',
+        link: '/data/tutorialmovix.json',
         tags: [
             'WEB DESIGN',
             'PRODUCT'
@@ -47,7 +47,7 @@ const ProjectsData = [
     },
     {
         name: 'Сайт AR VR направления Jetstyle',
-        link: '/data/wtower.json',
+        link: '/data/magic.json',
         tags: [
             'ANIMATION',
             '3D',
@@ -59,7 +59,7 @@ const ProjectsData = [
     },
     {
         name: 'Movix VR',
-        link: '/data/wtower.json',
+        link: '/data/movixvr.json',
         tags: [
             'ANIMATION',
             '3D',
@@ -81,7 +81,7 @@ const ProjectsData = [
     },
     {
         name: 'КЕЙС БЕЛОЙ БАШНИ',
-        link: '/data/wtower.json',
+        link: '/data/wtowercase.json',
         tags: [
             'ANIMATION',
             'WEB DESIGN'

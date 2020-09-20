@@ -25,7 +25,7 @@ class Projects extends React.Component{
     let arrayOfTags = this.state.filter;
     let find = arrayOfTags.indexOf(index)
     if(find===-1){
-      if(index!='0'){
+      if(index!=='0'){
         if(arrayOfTags.indexOf("0")>-1){
           arrayOfTags.splice(arrayOfTags.indexOf("0"), 1)
         }
@@ -48,7 +48,7 @@ class Projects extends React.Component{
           ProjectsData.map((element, num) => {
 
             let check = 0;
-            if(this.state.filter.indexOf("0")==-1){
+            if(this.state.filter.indexOf("0")===-1){
               this.state.filter.map((index)=>{
                 if(element.tags.indexOf(this.tags4filter[index])>-1){check++}
               })
@@ -90,7 +90,7 @@ class ProjectFilter extends React.Component{
           if(this.props.filter.indexOf(index.toString())>-1){status='active'}
           return(
             <span onClick = {this.props.handler} id = {index} key = {index} className = {'tag ' + status}>
-            {(status=='active')&&'#'}
+            {(status==='active')&&'#'}
             {item}
             </span>
           )
@@ -149,7 +149,7 @@ class ProjectText extends React.Component{
           })}
         </div>
         <h2>
-          {this.props.name}
+          {this.props.name.toUpperCase()}
         </h2>
       </div>
       )

@@ -308,15 +308,15 @@ h4#Contacts {
   grid-template-columns: repeat(9, 11.1%);
 }
 
-.videoSection.center iframe {
+.videoSection.center video {
   grid-column: 3/8;
   width: 100%;
 }
 
-.videoSection.wide iframe {
+.videoSection.wide video {
   grid-column: 1/10;
   width: 100%;
-  min-height: 40vh;
+  min-height: 36vw;
 }
 .closeButton {
   background-color: white;
