@@ -75,7 +75,7 @@ class App extends React.Component{
       <>
         <MobileUpButton handler = {this.scrolltoTop} status = {this.state.scroll}/>
         <div id = 'MainContainer' ref = {this.myref} onScroll = {this.scrollHandler} className = {myclass}>
-          {/*(this.state.loaderProgress < 1)&&<Loader progress = {this.state.loaderProgress}></Loader>*/}
+          {(this.state.loaderProgress < 1)&&<Loader progress = {this.state.loaderProgress}></Loader>}
           <LeftColumn handler = {this.closeRightPanel}/>
           <Projects loaderHandler = {this.loaderUpdate} handler = {this.rightPanelActivate}/>
         </div>
