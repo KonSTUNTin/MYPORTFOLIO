@@ -24,8 +24,17 @@ const ProjectsData = [
         img: './images/fiit.jpg'
     },
     {
+        name: 'Сайт СВЭЛ',
+        link: '../data/instagram.json',
+        tags: [
+            'WEB DESIGN',
+        ],
+        mask: 'flower',
+        img: './images/svel.jpg'
+    },
+    {
         name: 'Генеративный дизайн',
-        link: '../data/wtower.json',
+        link: '../data/instagram.json',
         tags: [
             'ANIMATION',
             '3D',

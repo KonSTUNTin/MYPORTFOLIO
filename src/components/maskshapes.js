@@ -6,9 +6,9 @@ class Mask extends React.Component{
             <svg className = {this.props.shape + ' mask'} viewBox="0 0 426 426" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                   <pattern id={"pattern" + this.props.num} patternContentUnits="objectBoundingBox" width="1" height="1">
-                  <use href={"#image" + this.props.num} transform="scale(.001)"/>
+                  <use xlinkHref={"#image" + this.props.num} transform="scale(.001)"/>
                   </pattern>
-                  <image id ={"image" + this.props.num} x="0" y="0" height="1024" width="1024" onLoad = {this.props.loaderHandler} href={this.props.img}/>
+                  <image id ={"image" + this.props.num} x="0" y="0" height="1024" width="1024" onLoad = {this.props.loaderHandler} xlinkHref={this.props.img}/>
                 </defs>
                 <clipPath id={"myClip" + this.props.num}>
                   <circle 
@@ -43,9 +43,9 @@ class Mask extends React.Component{
                     <RombShape id = {this.props.num}/>
                 </>}
     
-                <use href={"#" + this.props.shape + this.props.num} fill={'url(#pattern' + this.props.num + ')'}/>
-                <use className = 'hoverMask' clipPath={"url(#myClip" + this.props.num + ')'} href={"#" + this.props.shape + this.props.num} fill="black"/>
-                <use href={"#loadingOutline" + this.props.num} stroke="white" strokeWidth="3"></use>
+                <use xlinkHref={"#" + this.props.shape + this.props.num} fill={'url(#pattern' + this.props.num + ')'}/>
+                <use className = 'hoverMask' clipPath={"url(#myClip" + this.props.num + ')'} xlinkHref={"#" + this.props.shape + this.props.num} fill="black"/>
+                <use xlinkHref={"#loadingOutline" + this.props.num} stroke="white" strokeWidth="3"></use>
                 </svg>
             )
         
@@ -78,7 +78,7 @@ class StaticMask extends React.Component{
                 <RombShape id = {this.props.num}/>
                 </>}
 
-                <use href={"#" + this.props.shape + this.props.num} fill="black" />
+                <use xlinkHref={"#" + this.props.shape + this.props.num} fill="black" />
                 </svg>
             )
         

@@ -23,7 +23,7 @@ class RightPanel extends React.Component{
               tags={element.tags}/>
             <div className = 'ProjectContent'>
             {this.props.data.content.content.map(
-              (item)=>{
+              (item, index)=>{
                 return(
                   <>
                   {(item.type === 'text')&&<TextSection data = {item}/>}
@@ -56,7 +56,7 @@ class RightPanel extends React.Component{
     render(){
       return(
         <div className = {'videoSection ' + this.props.data.class}>
-          <video poster={this.props.data.poster} autoPlay="autoplay" muted loop="loop">
+          <video poster={this.props.data.poster} autoPlay="autoplay" muted loop="loop" controls>
             <source src={this.props.data.src} type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
           </video>
         </div>
@@ -70,9 +70,9 @@ class ImgSection extends React.Component{
     return(
       <div className = {'imgSection ' + this.props.data.class}>
         {this.props.data.src.map(
-        item=>{
+        (item, index)=>{
             return(
-                <img src = {item}/>
+                <img key = {index} src = {item}/>
             )
           }
         )}

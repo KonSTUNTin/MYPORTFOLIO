@@ -188,7 +188,7 @@ svg.circle.mask {
 
 div#RightPanel {
   position: fixed;
-  overflow: hidden scroll;
+  overflow: scroll;
   background-color: white;
   height: 100vh;
   z-index: 7;

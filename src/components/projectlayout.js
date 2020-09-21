@@ -119,17 +119,17 @@ class ProjectBlock extends React.Component{
             onClick = {this.props.handler}
             style={{transform: "rotate(" + this.angle +'deg)'}}
             >
-                <ProjectText 
-                name={this.props.name}
-                tags = {this.props.tags}
-                shape = {this.props.mask}
-                />
-                {
-                  (this.props.inCase)&&<StaticMask shape = {this.props.mask} num = {this.props.num}/>
-                }
-                {
-                  (!this.props.inCase)&&<Mask loaderHandler = {this.props.loaderHandler} shape = {this.props.mask} img = {this.props.img}  num = {this.props.num}/>
-                }
+            <ProjectText 
+            name={this.props.name}
+            tags = {this.props.tags}
+            shape = {this.props.mask}
+            />
+            {
+              (this.props.inCase)&&<StaticMask shape = {this.props.mask} num = {this.props.num}/>
+            }
+            {
+              (!this.props.inCase)&&<Mask loaderHandler = {this.props.loaderHandler} shape = {this.props.mask} img = {this.props.img}  num = {this.props.num}/>
+            }
             </div>
         )
     }
@@ -140,12 +140,13 @@ class ProjectText extends React.Component{
       return(
       <div className = {'projectText ' + this.props.shape}>
         <div className = 'tagsContainer'>
-          {this.props.tags.map(item=>{
-            return(
-              <span className = 'tag'>
-                {'#' + item}
-              </span>
-            )
+          {this.props.tags.map(
+            (item, index) =>{
+              return(
+                <span key = {'tag' + index} className = 'tag'>
+                  {'#' + item}
+                </span>
+              )
           })}
         </div>
         <h2>

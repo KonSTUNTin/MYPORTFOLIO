@@ -44,6 +44,7 @@
         height: auto;
         display: flex;
         width: 100%;
+        align-items: center;
         flex-flow: column-reverse;
     }
     svg {
@@ -63,7 +64,7 @@
         bottom: 0px;
         right: 0px;
         display: block;
-        overflow: hidden scroll;
+        overflow: scroll;
     }
     .ProjectBlock.inCase{
         margin-left: var(--x2);
@@ -112,6 +113,7 @@
     }
 
     .MobileUpButton {
+        top: 0px;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
