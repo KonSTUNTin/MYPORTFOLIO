@@ -26,7 +26,7 @@
     }
     div#MainContainer {
         display: block;
-        overflow: hidden scroll;
+        overflow: scroll;
     }
     div#MainContainer.hide::-webkit-scrollbar {
         display: none;

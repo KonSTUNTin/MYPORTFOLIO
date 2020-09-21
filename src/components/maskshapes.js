@@ -1,6 +1,14 @@
 import React from 'react';
 
 class Mask extends React.Component{
+    constructor(props){
+        super(props)
+        this.loadImage = this.loadImage.bind(this)
+    }
+    loadImage(){
+        console.log('hi')
+        //this.props.loaderHandler()
+    }
     render(){
         return(
             <svg className = {this.props.shape + ' mask'} viewBox="0 0 426 426" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -8,7 +16,7 @@ class Mask extends React.Component{
                   <pattern id={"pattern" + this.props.num} patternContentUnits="objectBoundingBox" width="1" height="1">
                   <use xlinkHref={"#image" + this.props.num} transform="scale(.001)"/>
                   </pattern>
-                  <image id ={"image" + this.props.num} x="0" y="0" height="1024" width="1024" onLoad = {this.props.loaderHandler} xlinkHref={this.props.img}/>
+                  <image onLoad = {this.loadImage} id ={"image" + this.props.num} x="0" y="0" height="1024" width="1024"  xlinkHref={this.props.img}/>
                 </defs>
                 <clipPath id={"myClip" + this.props.num}>
                   <circle 

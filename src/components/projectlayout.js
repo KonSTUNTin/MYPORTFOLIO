@@ -59,7 +59,7 @@ class Projects extends React.Component{
             if(check===this.state.filter.length){
               return(
                 <ProjectBlock 
-                    key = {num}
+                    key = {'project' + num}
                     inCase = {false}
                     loaderHandler = {this.props.loaderHandler}
                     handler = {this.props.handler}

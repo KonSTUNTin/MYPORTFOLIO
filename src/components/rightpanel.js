@@ -9,7 +9,7 @@ class RightPanel extends React.Component{
   render(){
     let element = ProjectsData[this.props.data.index];
     return(
-      <div ref = {this.props.linkRef} className ={this.props.data.status} id = 'RightPanel'>
+      <div ref = {this.props.linkRef} className ={this.props.data.status} onScroll = {this.props.onScroll} id = 'RightPanel'>
         {(this.props.data.content!= null)&&
           <>
             <ProjectHeader img = {this.props.data.content.img}/>

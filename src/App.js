@@ -32,8 +32,7 @@ class App extends React.Component{
     this.scrolltoTop = this.scrolltoTop.bind(this)
   }
   loaderUpdate(){
-    this.loaded ++
-    console.log(this.loaded)
+    this.loaded++
     let progress = this.loaded / this.loadNum ;
     this.setState({loaderProgress: progress})
   }
@@ -73,13 +72,15 @@ class App extends React.Component{
     let myclass ='';
     if(this.state.status === 'active'){myclass='hide'}
     return(
-      <div id = 'MainContainer' ref = {this.myref} onScroll = {this.scrollHandler} className = {myclass}>
-        {/*(this.state.loaderProgress < 1)&&<Loader progress = {this.state.loaderProgress}></Loader>*/}
+      <>
         <MobileUpButton handler = {this.scrolltoTop} status = {this.state.scroll}/>
-        <LeftColumn handler = {this.closeRightPanel}/>
-        <Projects loaderHandler = {this.loaderUpdate} handler = {this.rightPanelActivate}/>
-        <RightPanel linkRef = {this.rightPanelRef} handler = {this.closeRightPanel} data = {this.state} />
-      </div>
+        <div id = 'MainContainer' ref = {this.myref} onScroll = {this.scrollHandler} className = {myclass}>
+          {/*(this.state.loaderProgress < 1)&&<Loader progress = {this.state.loaderProgress}></Loader>*/}
+          <LeftColumn handler = {this.closeRightPanel}/>
+          <Projects loaderHandler = {this.loaderUpdate} handler = {this.rightPanelActivate}/>
+        </div>
+        <RightPanel onScroll = {this.scrollHandler} linkRef = {this.rightPanelRef} handler = {this.closeRightPanel} data = {this.state} />
+      </>
     )
   }
 }
