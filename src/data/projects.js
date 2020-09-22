@@ -24,6 +24,17 @@ const ProjectsData = [
         img: './images/fiit.jpg'
     },
     {
+        name: 'Сайт для музыканта morizmatik',
+        link: '../data/morizmatik.json',
+        tags: [
+            'WEB DESIGN',
+            'CODING',
+            'ANIMATION'
+        ],
+        mask: 'cross',
+        img: './images/morizmatik.jpg'
+    },
+    {
         name: 'Сайт СВЭЛ',
         link: '../data/instagram.json',
         tags: [
@@ -79,13 +90,13 @@ const ProjectsData = [
         img: './images/movix_vr.jpg'
     },
     {
-        name: 'САЙТ RIMEKS',
-        link: '/data/wtower.json',
+        name: 'Редизайн сайта РИМЕКС',
+        link: '/data/rimeks.json',
         tags: [
             'WEB DESIGN',
             'PRODUCT'
         ],
-        mask: 'cross',
+        mask: 'circle',
         img: './images/rimeks.jpg'
     },
     {

@@ -1,18 +1,12 @@
 import React from 'react';
 
 class Mask extends React.Component{
-    constructor(props){
-        super(props)
-        this.loadInd = ()=>{
-            console.log(this)
-            
-        }
-    }
+    
     render(){
         return(
             <>
             <img style = {{display: 'none'}} onLoad = {this.props.loaderHandler} src={this.props.img}/>
-            <svg ref = {this.loadInd}  className = {this.props.shape + ' mask'} viewBox="0 0 426 426" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className = {this.props.shape + ' mask'} viewBox="0 0 426 426" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                   <pattern id={"pattern" + this.props.num} patternContentUnits="objectBoundingBox" width="1" height="1">
                   <use xlinkHref={"#image" + this.props.num} transform="scale(.001)"/>

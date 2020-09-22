@@ -354,3 +354,9 @@ div#filter {
   flex-wrap: wrap;
   width:100%
 }
+svg.romb.mask {
+  transform: translateX(-7%);
+}
+.inCase svg.romb.mask {
+  transform: translateX(-27%);
+}

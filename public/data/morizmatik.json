@@ -1,0 +1,64 @@
+{
+    "name": "Название кейса",
+    "img": "/assets/morizmatik/header.jpg",
+    "content": [
+        {
+            "type": "link",
+            "path": "https://jetstyle.ru/portfolio/case/sozdanie-webvr-sajta-beloj-basni"
+        },
+        {
+            "type": "text",
+            "header": "Задача",
+            "text": "Сделать интересный сайт для битмейкера"
+        },
+        {
+            "type": "text",
+            "header": "Решение",
+            "text": "Спроектировал дизайн сайта с применением генеративных анимаций для начального блока и аудиовизуализаций."
+        },
+        {
+            "type": "text",
+            "text": "Аскетическая, темная, строгая верстка сайта служит оберткой для главного — музыки"
+        },
+        {
+            "type": "video",
+            "class": "wide",
+            "poster":  "/assets/morizmatik/poster0.jpg",
+            "src": "/assets/morizmatik/video0.mp4"
+        },
+        {
+            "type": "text",
+            "header": "",
+            "text": "Анимации первого блока отражают стиль музыки автора — электроника, хип-хоп. Это коллажи из паттернов, фото кассет, цветных фигур и типографики."
+        },
+        {
+            "type": "img",
+            "class": "wide",
+            "src": ["/assets/morizmatik/variants.jpg"]
+        },
+        {
+            "type": "text",
+            "text": "Плеер спроектирован с легкой ностальгической отсылкой к аудиокассетам. Также аудиовизуализация генерируется с индивидуальными настройками для каждого трека. Каждую такую визуализацию можно использовать для оформления публикаций в социальных сетях."
+        },
+        {
+            "type": "video",
+            "class": "wide",
+            "poster":  "/assets/morizmatik/poster2.jpg",
+            "src": "/assets/morizmatik/video2.mp4"
+        },
+        {
+            "type": "img",
+            "class": "wide",
+            "src": ["/assets/morizmatik/array.jpg"]
+        },
+        {
+            "type": "text",
+            "text": "Сайт спроектирован на все типы устройств, в том числе и на мобильные."
+        },
+        {
+            "type": "img",
+            "class": "wide",
+            "src": ["/assets/morizmatik/mobile.jpg"]
+        }
+    ]
+}

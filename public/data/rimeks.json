@@ -1,0 +1,61 @@
+{
+    "name": "Название кейса",
+    "img": "/assets/morizmatik/header.jpg",
+    "content": [
+        {
+            "type": "link",
+            "path": "https://jetstyle.ru/portfolio/case/sozdanie-webvr-sajta-beloj-basni"
+        },
+        {
+            "type": "text",
+            "header": "Задача",
+            "text": "Сделать интересный сайт для битмейкера"
+        },
+        {
+            "type": "text",
+            "header": "Решение",
+            "text": "Спроектировал дизайн сайта с применением генеративных анимаций для начального блока и аудиовизуализаций."
+        },
+        {
+            "type": "text",
+            "text": "Аскетическая, темная, строгая верстка сайта служит оберткой для главного — музыки"
+        },
+        {
+            "type": "text",
+            "header": "",
+            "text": "Анимации первого блока отражают стиль музыки автора — электроника, хип-хоп. Это коллажи из паттернов, фото кассет, цветных фигур и типографики."
+        },
+        {
+            "type": "img",
+            "class": "wide",
+            "src": ["/assets/rimeks/main.jpg"]
+        },
+        {
+            "type": "img",
+            "class": "wide",
+            "src": ["/assets/rimeks/desktop 1.jpg"]
+        },
+        {
+            "type": "img",
+            "class": "wide",
+            "src": ["/assets/rimeks/desktop 2.jpg"]
+        },
+        {
+            "type": "img",
+            "class": "wide",
+            "src": ["/assets/rimeks/desktop 3.jpg"]
+        },
+        {
+            "type": "img",
+            "class": "wide",
+            "src": ["/assets/rimeks/desktop 4.jpg"]
+        },
+        {
+            "type": "video",
+            "class": "wide",
+            "poster":  "/assets/rimeks/mobile.jpg",
+            "src": "/assets/rimeks/mobile.mp4"
+        }
+       
+    ]
+}
