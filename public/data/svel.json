@@ -1,0 +1,51 @@
+{
+    "name": "Название кейса",
+    "img": "/assets/svel/header.jpg",
+    "content": [
+        {
+            "type": "link",
+            "path": "https://jetstyle.ru/portfolio/case/sozdanie-webvr-sajta-beloj-basni"
+        },
+        {
+            "type": "text",
+            "header": "Задача",
+            "text": "Сделать редизайн интернет-магазина Римэкс."
+        },
+        {
+            "type": "text",
+            "header": "Решение",
+            "text": "Сделал дизайн сайта более современным, чистым и дружелюбным."
+        },
+        {
+            "type": "text",
+            "text": "Прежняя главная была перегруженной из-за разнородных баннеров и неконсистентных иконок. Поэтому был разработан формат баннеров и акционных публикаций, чтобы их можно было поддерживать без привлечения дизайнера. Также все иконки были заменены на миниатюры-картинки. "
+        },
+        {
+            "type": "video",
+            "class": "wide",
+            "poster":  "/assets/svel/main.jpg",
+            "src": "/assets/svel/main.mp4"
+        },
+        {
+            "type": "video",
+            "class": "wide",
+            "poster": "/assets/svel/mobile.jpg",
+            "src": "/assets/svel/mobile1.mp4"
+        },
+        {
+            "type": "img",
+            "class": "wide",
+            "src": ["/assets/svel/desktop0.jpg"]
+        },
+        {
+            "type": "img",
+            "class": "wide",
+            "src": ["/assets/svel/desktop1.jpg"]
+        },
+        {
+            "type": "img",
+            "class": "wide",
+            "src": ["/assets/svel/desktop2.jpg"]
+        }       
+    ]
+}

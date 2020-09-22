@@ -36,7 +36,7 @@ const ProjectsData = [
     },
     {
         name: 'Сайт СВЭЛ',
-        link: '../data/instagram.json',
+        link: '../data/svel.json',
         tags: [
             'WEB DESIGN',
         ],
