@@ -96,7 +96,7 @@ class ProjectHeader extends React.Component{
 class TextSection extends React.Component{
   
   render(){
-    console.log(this.props)
+    
     return(
       <div className = 'textSection'>
         <h4>
