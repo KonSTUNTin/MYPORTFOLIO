@@ -59,6 +59,15 @@ h4 {
   font-weight: 400;
   text-transform: uppercase;
 }
+
+#myPage {
+  font-size: var(--x3);
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-bottom: var(--x3);
+  margin-top: var( --x4);
+}
 span{
   font-size: 18px;
   font-weight: 400;
@@ -359,4 +368,57 @@ svg.romb.mask {
 }
 .inCase svg.romb.mask {
   transform: translateX(-27%);
+}
+
+.aboutMe .ProjectContent {
+  grid-column: 1 / 10;
+  grid-row: 3;
+}
+
+.listSection {
+  display: grid;
+  margin-bottom: var(--x3);
+  grid-template-columns: repeat(9, 1fr);
+}
+.jobSection {
+  display: grid;
+  margin-bottom: var(--x3);
+  grid-template-columns: repeat(9, 1fr);
+}
+.jobSection h4 {
+  font-weight: 800;
+  grid-column: 3;
+}
+.listSection h4 {
+  font-weight: 800;
+  grid-column: 3;
+}
+.listSection ul {
+  grid-column: 5 / 8;
+}
+.jobSection ul {
+  grid-column: 5 / 8;
+}
+li {
+  list-style: none;
+  margin-bottom: var(--x);
+}
+
+.jobInfo {
+  font-weight: 800;
+  margin-bottom: var(--x2);
+}
+
+.jobRow {
+  margin-bottom: var(--x3);
+}
+li:before {
+  content: '';
+  background-color: red;
+  height: 6px;
+  width: 6px;
+  display: block;
+  position: absolute;
+  transform: translate(-14px, 8px);
+  border-radius: var(--x);
 }
