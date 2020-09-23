@@ -24,11 +24,13 @@
         {
             "type": "video",
             "class": "wide",
+            "poster": "/assets/arvr/start.jpg",
             "src": "/assets/arvr/start.mp4"
         },
         {
             "type": "video",
             "class": "wide",
+            "poster": "/assets/arvr/vr.jpg",
             "src": "/assets/arvr/vr.mp4"
         }
     ]

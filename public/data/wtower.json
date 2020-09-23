@@ -23,11 +23,13 @@
         {
             "type": "video",
             "class": "wide",
+            "poster":  "/assets/wtower/loader.jpg",
             "src": "/assets/wtower/loader.mp4"
         },
         {
             "type": "video",
             "class": "wide",
+            "poster":  "/assets/wtower/start.jpg",
             "src": "/assets/wtower/start.mp4"
         }
     ]

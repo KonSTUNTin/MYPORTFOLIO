@@ -13,7 +13,7 @@
         {
             "type": "video",
             "class": "wide",
-            "poster": "/assets/instagram/poster.png",
+            "poster": "/assets/instagram/poster.jpg",
             "src": "/assets/instagram/video.mp4"
         }
 

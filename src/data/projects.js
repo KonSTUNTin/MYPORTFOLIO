@@ -78,17 +78,15 @@ const ProjectsData = [
         img: './images/magic.jpg'
     },
     {
-        name: 'Movix VR',
-        link: '/data/movixvr.json',
+        name: 'КЕЙС БЕЛОЙ БАШНИ',
+        link: '/data/wtowercase.json',
         tags: [
             'ANIMATION',
-            '3D',
-            'WEB DESIGN',
-            'CODING'
+            'WEB DESIGN'
         ],
         mask: 'cross',
-        img: './images/movix_vr.jpg'
-    },
+        img: './images/case_wtower.jpg'
+    },    
     {
         name: 'Редизайн сайта РИМЕКС',
         link: '/data/rimeks.json',
@@ -100,14 +98,16 @@ const ProjectsData = [
         img: './images/rimeks.jpg'
     },
     {
-        name: 'КЕЙС БЕЛОЙ БАШНИ',
-        link: '/data/wtowercase.json',
+        name: 'Movix VR',
+        link: '/data/movixvr.json',
         tags: [
             'ANIMATION',
-            'WEB DESIGN'
+            '3D',
+            'WEB DESIGN',
+            'CODING'
         ],
-        mask: 'cross',
-        img: './images/case_wtower.jpg'
+        mask: 'circle',
+        img: './images/movix_vr.jpg'
     }
    
 ]

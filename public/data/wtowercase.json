@@ -22,31 +22,31 @@
         {
             "type": "video",
             "class": "wide",
-            "poster": "/assets/tutorialmovix/poster.png",
+            "poster": "/assets/wtowercase/video.jpg",
             "src": "/assets/wtowercase/video.mp4"
         },
         {
             "type": "video",
             "class": "wide",
-            "poster": "/assets/tutorialmovix/poster.png",
+            "poster": "/assets/wtowercase/loop0.jpg",
             "src": "/assets/wtowercase/loop0.mp4"
         },
         {
             "type": "video",
             "class": "wide",
-            "poster": "/assets/tutorialmovix/poster.png",
+            "poster": "/assets/wtowercase/loop1.jpg",
             "src": "/assets/wtowercase/loop1.mp4"
         },
         {
             "type": "video",
             "class": "wide",
-            "poster": "/assets/tutorialmovix/poster.png",
+            "poster": "/assets/wtowercase/loop2.jpg",
             "src": "/assets/wtowercase/loop2.mp4"
         },
         {
             "type": "video",
             "class": "wide",
-            "poster": "/assets/tutorialmovix/poster.png",
+            "poster": "/assets/wtowercase/loop3.jpg",
             "src": "/assets/wtowercase/loop3.mp4"
         }
     ]
