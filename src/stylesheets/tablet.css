@@ -1,0 +1,21 @@
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+    :root {
+        --margin: var(--x2);
+        --left: 260px;
+    }
+
+    div#myPhoto {
+        width: 80px;
+        height: 80px;
+    }
+    h1, #myPage {
+        font-size: var(--x2);
+    }
+    .section h4, .section p {
+        grid-column: 3 / 8;
+    }
+    .section h4{
+        margin-bottom: var(--x);
+    }
+
+}

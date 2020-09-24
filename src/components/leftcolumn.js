@@ -3,7 +3,12 @@ class LeftColumn extends React.Component{
     render(){
       return(
         <div id = 'LeftColumn'>
-          <div id ='myPhoto' onClick = {this.props.handler}>
+          <div id = 'avatarRow'> 
+            <div id ='myPhoto' onClick = {this.props.handler}></div>
+            <div id ='language'>
+              <span onClick = {this.props.changeLanguage} id = 'RU' className = {(this.props.lang==1)?'langSwitcher active':'langSwitcher'}>RU</span>
+              <span onClick = {this.props.changeLanguage} id = 'ENG' className = {(this.props.lang==0)?'langSwitcher active':'langSwitcher'}>ENG</span>
+            </div>
           </div>
           <h1 id = 'aboutMe'>
             {(this.props.lang===1)&&<>Привет!<br/> Меня зовут<br/> Костя&nbsp;Остроухов.<br className ='mobile'/> Я проектирую, рендерю и&nbsp;кодю для&nbsp;web.</>}
@@ -14,7 +19,7 @@ class LeftColumn extends React.Component{
             {(this.props.lang===0)&&<>ABOUT ME</>}
           </a>
           <h4 id ='Contacts'>
-            {"+7 950-64-99-204 totsamuion@yandex.ru "}<br/>
+            {"+7 950-64-99-204 k.ostro@yandex.ru "}<br/>
             <a target = 'blank' href = 'https://t.me/Kostya_Ostro'>TELEGRAM</a>
             {' '}
             <a target = 'blank' href = 'https://www.facebook.com/totsamuion/'>FACEBOOK</a>

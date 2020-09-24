@@ -10,7 +10,7 @@ class RightPanel extends React.Component{
       <div ref = {this.props.linkRef} className ={this.props.data.status} onScroll = {this.props.onScroll} id = 'RightPanel'>
         {(this.props.data.content!= null)&&
           <>
-            {this.props.data.aboutMe===0&&<ProjectHeader img = {this.props.data.content.img}/>}
+            <ProjectHeader img = {this.props.data.content.img}/>
 
             <CloseButton handler = {this.props.handler}/>
 
@@ -59,7 +59,7 @@ class RightPanel extends React.Component{
   class VideoSection extends React.Component{
     render(){
       return(
-        <div className = {'videoSection ' + this.props.data.class}>
+        <div className = {'videoSection section ' + this.props.data.class}>
           <video poster={this.props.data.poster} autoPlay="autoplay" muted loop="loop" controls>
             <source src={this.props.data.src} type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
           </video>
@@ -72,7 +72,7 @@ class RightPanel extends React.Component{
 class ImgSection extends React.Component{
   render(){
     return(
-      <div className = {'imgSection ' + this.props.data.class}>
+      <div className = {'imgSection section ' + this.props.data.class}>
         {this.props.data.src.map(
         (item, index)=>{
             return(
@@ -102,7 +102,7 @@ class TextSection extends React.Component{
   render(){
     
     return(
-      <div className = 'textSection'>
+      <div className = 'textSection section'>
         <h4>
           {this.props.data.header}
         </h4>
@@ -118,7 +118,7 @@ class ListSection extends React.Component{
   
   render(){
     return(
-      <div className = 'listSection'>
+      <div className = 'listSection section'>
         <h4>
           {this.props.data.header}
         </h4>
@@ -141,7 +141,7 @@ class JobSection extends React.Component{
   
   render(){
     return(
-      <div className = 'jobSection'>
+      <div className = 'jobSection section'>
         <h4>
           {this.props.data.header}
         </h4>

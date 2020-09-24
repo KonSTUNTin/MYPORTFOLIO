@@ -3,6 +3,7 @@ import ProjectsDataRU from './data/projectsRU.js';
 import ProjectsDataEN from './data/projectsEN.js'
 import './stylesheets/main.css';
 import './stylesheets/desktop.css';
+import './stylesheets/tablet.css';
 import './stylesheets/mobile.css';
 
 import LeftColumn from './components/leftcolumn.js';
@@ -28,10 +29,8 @@ class App extends React.Component{
       // lang = 1
       // ProjectsData = ProjectsDataRU
     }
-
-
     this.state ={
-      status: null,
+      status: 'not',
       content: null,
       index: null,
       scroll: null,
@@ -49,17 +48,26 @@ class App extends React.Component{
     this.scrollHandler = this.scrollHandler.bind(this)
     this.scrolltoTop = this.scrolltoTop.bind(this)
     this.pageAboutMeActivate = this.pageAboutMeActivate.bind(this)
-
+    this.changeLanguage = this.changeLanguage.bind(this)
     
   }
-
+  changeLanguage(){
+    if(this.state.lang === 0){
+      this.setState({lang: 1})
+      this.ProjectsData = ProjectsDataRU
+    } else {
+      this.setState({lang: 0})
+      this.ProjectsData = ProjectsDataEN
+    }
+    this.closeRightPanel()
+  }
   loaderUpdate(){
     this.loaded++
     let progress = this.loaded / this.loadNum ;
     this.setState({loaderProgress: progress})
   }
   closeRightPanel(){
-    (this.state.status.indexOf("active")>-1)&&this.setState({status: null, content: null, index: null,  aboutMe: null})
+    (this.state.status.indexOf("active")>-1)&&this.setState({status: 'not', content: null, index: null,  aboutMe: null})
   }
   async rightPanelActivate(event){
       let index = event.currentTarget.id
@@ -112,10 +120,11 @@ class App extends React.Component{
     if(this.state.status === 'active'){myclass='hide'}
     return(
       <>
+        {this.ex}
         <MobileUpButton handler = {this.scrolltoTop} status = {this.state.scroll}/>
         <div id = 'MainContainer' ref = {this.myref} onScroll = {this.scrollHandler} className = {myclass}>
           {(this.state.loaderProgress < 1)&&<Loader lang = {this.state.lang} progress = {this.state.loaderProgress}></Loader>}
-          <LeftColumn lang = {this.state.lang} openAboutMe = {this.pageAboutMeActivate} handler = {this.closeRightPanel}/>
+          <LeftColumn changeLanguage = {this.changeLanguage} lang = {this.state.lang} openAboutMe = {this.pageAboutMeActivate} handler = {this.closeRightPanel}/>
           <Projects loaderHandler = {this.loaderUpdate} handler = {this.rightPanelActivate} projects = {this.ProjectsData}/>
         </div>
         <RightPanel projects = {this.ProjectsData} onScroll = {this.scrollHandler} linkRef = {this.rightPanelRef} handler = {this.closeRightPanel} data = {this.state} />

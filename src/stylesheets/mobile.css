@@ -8,38 +8,48 @@
         flex-flow: column;
         z-index: 8;
     }
+
     h4#Contacts {
         margin-top: var(--x2);
         font-size: 18px;
     }
-    #Contacts::before{
+
+    #Contacts::before {
         display: none;
     }
+
     #projectMatrix h2 {
         text-align: center;
     }
+
     #projectMatrix .tagsContainer {
         flex-flow: row;
         justify-content: center;
         flex-wrap: wrap;
         justify-items: center;
     }
+
     div#MainContainer {
         display: block;
         overflow: scroll;
     }
+
     div#MainContainer.hide::-webkit-scrollbar {
         display: none;
     }
+
     h1 {
         font-size: 18px;
     }
+
     div#projectMatrix {
-        
+
         margin: 0px;
         margin-top: 10vh;
     }
-    #projectMatrix .ProjectBlock, .ProjectBlock {
+
+    #projectMatrix .ProjectBlock,
+    .ProjectBlock {
         max-width: 90vw;
         height: auto;
         display: flex;
@@ -47,9 +57,11 @@
         align-items: center;
         flex-flow: column-reverse;
     }
+
     svg {
         position: static;
     }
+
     .projectText {
         opacity: 1;
         margin: 0px;
@@ -57,6 +69,7 @@
         color: black;
         margin-bottom: 72px;
     }
+
     div#RightPanel {
         position: fixed;
         height: 100vh;
@@ -66,48 +79,54 @@
         display: block;
         overflow: scroll;
     }
-    .ProjectBlock.inCase{
+
+    .ProjectBlock.inCase {
         margin-left: var(--x2);
         margin-top: var(--x4);
     }
+
     .ProjectBlock.inCase svg {
-        display:none
+        display: none
     }
-    .textSection {
+
+    .section {
         display: block;
+        margin-bottom: var(--x3);
         margin-left: var(--x2);
         margin-right: var(--x2);
     }
-    .imgSection {
-        display: block;
-    }
-    .videoSection {
-        display: block;
-    }
+
     .projectHeader {
         height: 50vh;
     }
+
     div#clipContainer {
         overflow: hidden;
         height: initial;
     }
+
     .hoverMask {
         display: none;
     }
+
     svg.oval.mask {
         transform: translate(8%, -4%);
     }
+
     .closeButton {
         position: absolute;
         top: calc(50vh - var(--x2));
-        margin-left: var( --x2);
+        margin-left: var(--x2);
     }
+
     div#RightPanel {
         left: 0px;
     }
+
     h1#aboutMe br {
         display: none;
     }
+
     h1#aboutMe br.mobile {
         display: block;
     }
@@ -119,18 +138,21 @@
         justify-content: space-between;
         padding: var(--x) var(--x2);
         position: fixed;
-        background-color: rgba(255,255,255,.9);
+        background-color: rgba(255, 255, 255, .9);
         width: calc(100% - var(--x4));
         z-index: 8;
     }
+
     .MobileUpButton.active {
         display: flex;
     }
-    .MobileUpButton span{
-        cursor:pointer;
+
+    .MobileUpButton span {
+        cursor: pointer;
         color: red;
         text-transform: uppercase;
     }
+
     div#logo {
         width: 62px;
         height: 62px;
@@ -139,17 +161,21 @@
         background-repeat: no-repeat;
         animation: avatarSwitch 3s infinite step-start;
     }
+
     .inCase .projectText {
         margin-bottom: var(--x4);
     }
-    .inCase h2{
+
+    .inCase h2 {
         margin-top: var(--x);
         font-size: var(--x3);
         line-height: 100%;
     }
-    .textSection h4{
+
+    .textSection h4 {
         margin-bottom: var(--x);
-      }
+    }
+
     .inCase .tagsContainer {
         display: flex;
         flex-flow: row;
@@ -157,20 +183,33 @@
         justify-items: flex-start;
         flex-wrap: wrap;
     }
+
     .inCase .tag {
         margin-right: var(--x);
     }
+
     .closeButton span {
         display: block;
         color: red;
         margin: 0 var(--x);
-        
+
     }
-    
+
     .crossIcon {
         background-size: 50%;
     }
+
     div#filter {
         display: none;
+    }
+
+    #myPage {
+        font-size: 18px;
+        margin-top: var(--x2);
+    }
+
+    div#avatarRow {
+        justify-content: space-between;
+        margin-bottom: var(--x2);
     }
 }

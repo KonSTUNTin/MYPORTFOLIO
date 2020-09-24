@@ -3,4 +3,21 @@
         height: var(--x4);
         width: var(--x4);
     }
+    #myPage {
+        font-size: var(--x3);
+        margin-bottom: var(--x3);
+        margin-top: var( --x3);
+      }
+      .langSwitcher {
+        font-size: var(--x2);
+      }
+      div#avatarRow {
+        justify-content: start;
+        margin-bottom: var(--x2);
+      }
+      .section {
+        display: grid;
+        margin-bottom: var(--x3);
+        grid-template-columns: repeat(9, 1fr);
+      }
 }

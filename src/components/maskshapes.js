@@ -6,13 +6,18 @@ class Mask extends React.Component{
             this.x =  Math.round(Math.random()) * 426;
             this.y =  Math.round(Math.random()) * 426;
             
+            if(this.props.shape === 'flower'){this.shape = <FlowerShape id = {this.props.num}/>}
+            if(this.props.shape === 'circle'){this.shape = <CircleShape id = {this.props.num}/>}
+            if(this.props.shape === 'oval'){this.shape = <OvalShape id = {this.props.num}/>}
+            if(this.props.shape === 'cross'){this.shape = <CrossShape id = {this.props.num}/>}
+            if(this.props.shape === 'romb'){this.shape = <RombShape id = {this.props.num}/>}
     }
     render(){
        
         return(
             <>
             <img style = {{display: 'none'}} onLoad = {this.props.loaderHandler} src={this.props.img}/>
-            <svg className = {this.props.shape + ' mask'} viewBox="0 0 426 426" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className = {this.props.shape + ' mask'} viewBox="0 0 426 426"  fill="none" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                   <pattern id={"pattern" + this.props.num} patternContentUnits="objectBoundingBox" width="1" height="1">
                   <use xlinkHref={"#image" + this.props.num} transform="scale(.001)"/>
@@ -25,32 +30,11 @@ class Mask extends React.Component{
                   cy={this.y} 
                   r="600" fill = 'black'/>
                 </clipPath>
-                {console.log(new Date())}
-    
-                {(this.props.shape === 'flower')&&<>
-                    <FlowerShape id = {this.props.num}/>
-                </>}
-    
-                {(this.props.shape === 'circle')&&<>
-                  <CircleShape id = {this.props.num}/> 
-                  {/* <path id = {'loadingOutline' + this.props.num} d="M395.5 207C395.5 311.106 311.106 395.5 207 395.5C102.894 395.5 18.5 311.106 18.5 207C18.5 102.894 102.894 18.5 207 18.5C311.106 18.5 395.5 102.894 395.5 207Z" /> */}
-                </>}
-    
-                {(this.props.shape === 'oval')&&<>
-                  <OvalShape id = {this.props.num}/>
-                </>}
-    
-                {(this.props.shape === 'cross')&&<>
-                    <CrossShape id = {this.props.num}/>
-                </>}
-    
-                {(this.props.shape === 'romb')&&<>
-                    <RombShape id = {this.props.num}/>
-                </>}
+                    
+                {this.shape}
     
                 <use xlinkHref={"#" + this.props.shape + this.props.num} fill={'url(#pattern' + this.props.num + ')'}/>
                 <use className = 'hoverMask' clipPath={"url(#myClip" + this.props.num + ')'} xlinkHref={"#" + this.props.shape + this.props.num} fill="black"/>
-                <use xlinkHref={"#loadingOutline" + this.props.num} stroke="white" strokeWidth="3"></use>
                 </svg>
                 </>
             )
@@ -59,37 +43,23 @@ class Mask extends React.Component{
     }
 
 class StaticMask extends React.Component{
+    constructor(props){
+        super(props)
+        if(this.props.shape === 'flower'){this.shape = <FlowerShape id = {this.props.num}/>}
+        if(this.props.shape === 'circle'){this.shape = <CircleShape id = {this.props.num}/>}
+        if(this.props.shape === 'oval'){this.shape = <OvalShape id = {this.props.num}/>}
+        if(this.props.shape === 'cross'){this.shape = <CrossShape id = {this.props.num}/>}
+        if(this.props.shape === 'romb'){this.shape = <RombShape id = {this.props.num}/>}
+    }
     render(){
         return(
             <svg className = {this.props.shape + ' mask'} viewBox="0 0 426 426" fill="none" xmlns="http://www.w3.org/2000/svg">
-    
-                {(this.props.shape === 'flower')&&<>
-                <FlowerShape id = {this.props.num}/>
-                </>}
-    
-                {(this.props.shape === 'circle')&&<>
-                <CircleShape id = {this.props.num}/>               
-                <path id = 'loadingOutline' d="M395.5 207C395.5 311.106 311.106 395.5 207 395.5C102.894 395.5 18.5 311.106 18.5 207C18.5 102.894 102.894 18.5 207 18.5C311.106 18.5 395.5 102.894 395.5 207Z" stroke="white" strokeWidth="3"/>
-                </>}
-    
-                {(this.props.shape === 'oval')&&<>
-                <OvalShape id = {this.props.num}/>              
-                </>}
-    
-                {(this.props.shape === 'cross')&&<>
-                <CrossShape id = {this.props.num}/>
-                </>}
-    
-                {(this.props.shape === 'romb')&&<>
-                <RombShape id = {this.props.num}/>
-                </>}
-
+                {this.shape}
                 <use xlinkHref={"#" + this.props.shape + this.props.num} fill="black" />
                 </svg>
-            )
-        
+            )   
     }
-    }
+}
 
 
 class CircleShape extends React.Component{
