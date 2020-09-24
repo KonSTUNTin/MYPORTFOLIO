@@ -168,12 +168,15 @@ svg {
 }
 
 circle {
-  transition: r 500ms;
+  transition: transform 600ms;
 }
 
-.ProjectBlock:hover circle,
-.ProjectBlock.inCase circle {
-  r: 150%;
+.ProjectBlock circle {
+  transform: scale3d(0.01, 0.01, 0.01);
+}
+
+.ProjectBlock:hover circle {
+  transform: scale3d(1, 1, 1);
 }
 
 .projectText {

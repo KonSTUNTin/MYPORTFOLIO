@@ -1,7 +1,7 @@
-const ProjectsData = [
+const ProjectsDataEN = [
     {
-        name: 'WEBVR САЙТ БEЛОЙ БАШНИ',
-        link: '/data/wtower.json',
+        name: 'WebVR site for\u00A0The\u00A0White Tower',
+        link: '/dataEN/wtower.json',
         tags: [
             'ANIMATION',
             '3D',
@@ -12,8 +12,8 @@ const ProjectsData = [
         img: './images/wtower.jpg'
     },
     {
-        name: 'Айдентика ФИИТ',
-        link: '/data/fiit.json',
+        name: 'FIIT branding',
+        link: '/dataEN/fiit.json',
         tags: [
             'ANIMATION',
             'WEB DESIGN',
@@ -24,8 +24,8 @@ const ProjectsData = [
         img: './images/fiit.jpg'
     },
     {
-        name: 'Сайт для музыканта morizmatik',
-        link: '../data/morizmatik.json',
+        name: 'Website for\u00A0the\u00A0musician morizmatik',
+        link: '../dataEN/morizmatik.json',
         tags: [
             'WEB DESIGN',
             'CODING',
@@ -35,8 +35,8 @@ const ProjectsData = [
         img: './images/morizmatik.jpg'
     },
     {
-        name: 'Сайт СВЭЛ',
-        link: '../data/svel.json',
+        name: 'SVEL website',
+        link: '../dataEN/svel.json',
         tags: [
             'WEB DESIGN',
         ],
@@ -44,8 +44,8 @@ const ProjectsData = [
         img: './images/svel.jpg'
     },
     {
-        name: 'Генеративный дизайн',
-        link: '../data/instagram.json',
+        name: 'Generative design',
+        link: '../dataEN/instagram.json',
         tags: [
             'ANIMATION',
             '3D',
@@ -57,7 +57,7 @@ const ProjectsData = [
    
     {
         name: 'MOVIX',
-        link: '/data/tutorialmovix.json',
+        link: '/dataEN/tutorialmovix.json',
         tags: [
             'WEB DESIGN',
             'PRODUCT'
@@ -66,8 +66,8 @@ const ProjectsData = [
         img: './images/movix.jpg'
     },
     {
-        name: 'Сайт AR VR направления Jetstyle',
-        link: '/data/magic.json',
+        name: "Jetstyle's portfolio of\u00A0AR\u00A0VR projects",
+        link: '/dataEN/magic.json',
         tags: [
             'ANIMATION',
             '3D',
@@ -78,8 +78,8 @@ const ProjectsData = [
         img: './images/magic.jpg'
     },
     {
-        name: 'КЕЙС БЕЛОЙ БАШНИ',
-        link: '/data/wtowercase.json',
+        name: 'Case of\u00A0the\u00A0White Tower website',
+        link: '/dataEN/wtowercase.json',
         tags: [
             'ANIMATION',
             'WEB DESIGN'
@@ -88,8 +88,8 @@ const ProjectsData = [
         img: './images/case_wtower.jpg'
     },    
     {
-        name: 'Редизайн сайта РИМЕКС',
-        link: '/data/rimeks.json',
+        name: 'Rimeks website',
+        link: '/dataEN/rimeks.json',
         tags: [
             'WEB DESIGN',
             'PRODUCT'
@@ -99,7 +99,7 @@ const ProjectsData = [
     },
     {
         name: 'Movix VR',
-        link: '/data/movixvr.json',
+        link: '/dataEN/movixvr.json',
         tags: [
             'ANIMATION',
             '3D',
@@ -112,4 +112,4 @@ const ProjectsData = [
    
 ]
 
-export default ProjectsData
+export default ProjectsDataEN

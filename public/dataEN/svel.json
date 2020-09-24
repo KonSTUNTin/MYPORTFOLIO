@@ -1,0 +1,75 @@
+{
+    "name": "Название кейса",
+    "img": "/assets/svel/header.jpg",
+    "content": [
+        {
+            "type": "link",
+            "path": "https://jetstyle.ru/portfolio/case/sozdanie-webvr-sajta-beloj-basni"
+        },
+        {
+            "type": "text",
+            "header": "Task",
+            "text": "To redesign the website for an electrical equipment manufacturer."
+        },
+        {
+            "type": "text",
+            "header": "Part in\u00A0the\u00A0project",
+            "text": "The project was made while working at Jetstyle. A new design was created with the help of the client’s art director and product managers."
+        },
+        {
+            "type": "text",
+            "text": "This design was not developed, because the client decided to change the contractor."
+        },
+        {
+            "header": "Main page",
+            "type": "text",
+            "text": "Cases and strategic directions of the company are highlighted on the front page. The product is demonstrated as a slider with renders and pictures."
+        },
+        {
+            "type": "video",
+            "class": "wide",
+            "poster":  "/assets/svel/main.jpg",
+            "src": "/assets/svel/main.mp4"
+        },
+        {
+            "header": "Catalog",
+            "type": "text",
+            "text": "The catalogue was developed with the idea in mind, that some products might not have a picture."
+        },
+        {
+            "type": "img",
+            "class": "wide",
+            "src": ["/assets/svel/desktop0.jpg"]
+        },
+        {
+            "header": "Product page",
+            "type": "text",
+            "text": "On the top of the page there are user-friendly big buttons for ordering a consultation or downloading the documents. On the left is placed the navigating menu on the description of a product, so that a customer can access any section needed in one single click."
+        },
+        {
+            "type": "img",
+            "class": "wide",
+            "src": ["/assets/svel/desktop1.jpg"]
+        },
+        {
+            "header": "Page of case",
+            "type": "text",
+            "text": "On the page of the case there are specially developed statistics blocks of the project and reviews. They help to cut the narrative and highlight the main points."
+        },
+        {
+            "type": "img",
+            "class": "wide",
+            "src": ["/assets/svel/desktop2.jpg"]
+        }, 
+        {
+            "type": "text",
+            "text": "We redesigned all the pages and the mobile version of the website."
+        },
+        {
+            "type": "video",
+            "class": "wide",
+            "poster": "/assets/svel/mobile.jpg",
+            "src": "/assets/svel/mobile1.mp4"
+        }   
+    ]
+}

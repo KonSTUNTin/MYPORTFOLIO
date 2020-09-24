@@ -1,5 +1,6 @@
 import React from 'react';
-import ProjectsData from './data/projects.js'
+import ProjectsDataRU from './data/projectsRU.js';
+import ProjectsDataEN from './data/projectsEN.js'
 import './stylesheets/main.css';
 import './stylesheets/desktop.css';
 import './stylesheets/mobile.css';
@@ -9,9 +10,25 @@ import RightPanel from './components/rightpanel.js';
 import {Projects} from './components/projectlayout.js';
 import MobileUpButton from './components/mobileUpButton.js';
 
+
 class App extends React.Component{
   constructor(props){
     super(props)
+
+    let config = {
+      'language': 'en',
+      'country': 'EN'
+    }
+    let ProjectsData = ProjectsDataEN;
+    let lang = 0;
+    let client = window.navigator ? (window.navigator.language ||
+      window.navigator.systemLanguage ||
+      window.navigator.userLanguage) : (config.language + "-" + config.country);
+    if(client.toUpperCase().indexOf("RU" > -1)){
+      // lang = 1
+      // ProjectsData = ProjectsDataRU
+    }
+
 
     this.state ={
       status: null,
@@ -20,12 +37,11 @@ class App extends React.Component{
       scroll: null,
       loaderProgress: 0,
       aboutMe: 0,
-      lang: 0
+      lang: lang
     }
-
+    this.ProjectsData = ProjectsData;
     this.myref = React.createRef()
     this.rightPanelRef = React.createRef()
-    this.loadNum = ProjectsData.length;
     this.loaded = 0;
     this.loaderUpdate = this.loaderUpdate.bind(this);
     this.rightPanelActivate = this.rightPanelActivate.bind(this)
@@ -33,25 +49,8 @@ class App extends React.Component{
     this.scrollHandler = this.scrollHandler.bind(this)
     this.scrolltoTop = this.scrolltoTop.bind(this)
     this.pageAboutMeActivate = this.pageAboutMeActivate.bind(this)
-    this.languageDetect = this.languageDetect.bind(this)
 
     
-  }
-  componentDidMount(){
-    this.languageDetect()
-  }
-  languageDetect(){
-    let config = {
-      'language': 'en',
-      'country': ''
-    }
-    let client = window.navigator ? (window.navigator.language ||
-      window.navigator.systemLanguage ||
-      window.navigator.userLanguage) : (config.language + "-" + config.country);
-      if(client.toUpperCase().indexOf("RU" > -1)){
-        this.setState({lang:1})
-        console.log('ru')
-      }
   }
 
   loaderUpdate(){
@@ -65,7 +64,7 @@ class App extends React.Component{
   async rightPanelActivate(event){
       let index = event.currentTarget.id
       let response = await fetch(
-        ProjectsData[index].link, {
+        this.ProjectsData[index].link, {
           headers : { 
             'Content-Type': 'application/json',
             'Accept': 'application/json'
@@ -75,8 +74,12 @@ class App extends React.Component{
       this.setState({content:data, status:"active", index: index, scroll: null, aboutMe: 0})
   }
   async pageAboutMeActivate(event){
+    let path = [
+      './dataEN/aboutme.json',
+      './dataRU/aboutme.json',
+    ]
     let response = await fetch(
-      './data/aboutme.json', {
+      path[this.state.lang], {
         headers : { 
           'Content-Type': 'application/json',
           'Accept': 'application/json'
@@ -112,9 +115,9 @@ class App extends React.Component{
         <div id = 'MainContainer' ref = {this.myref} onScroll = {this.scrollHandler} className = {myclass}>
           {(this.state.loaderProgress < 1)&&<Loader lang = {this.state.lang} progress = {this.state.loaderProgress}></Loader>}
           <LeftColumn lang = {this.state.lang} openAboutMe = {this.pageAboutMeActivate} handler = {this.closeRightPanel}/>
-          <Projects loaderHandler = {this.loaderUpdate} handler = {this.rightPanelActivate}/>
+          <Projects loaderHandler = {this.loaderUpdate} handler = {this.rightPanelActivate} projects = {this.ProjectsData}/>
         </div>
-        <RightPanel onScroll = {this.scrollHandler} linkRef = {this.rightPanelRef} handler = {this.closeRightPanel} data = {this.state} />
+        <RightPanel projects = {this.ProjectsData} onScroll = {this.scrollHandler} linkRef = {this.rightPanelRef} handler = {this.closeRightPanel} data = {this.state} />
       </>
     )
   }

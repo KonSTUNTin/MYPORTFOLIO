@@ -1,0 +1,21 @@
+{
+    "name": "Название кейса",
+    "img": "/images/fiit_header.jpg",
+    "content": [
+        {
+            "type": "link",
+            "path": "https://jetstyle.ru/portfolio/case/sozdanie-webvr-sajta-beloj-basni"
+        },
+        {
+            "type": "text",
+            "text": "At some point I got interested in what can be drafted and animated using coding. I started my experiments, and then I published my results on an Instagram account. The projects vary from some random animations to drafters, constructors, and editors."
+        },
+        {
+            "type": "video",
+            "class": "wide",
+            "poster": "/assets/instagram/poster.jpg",
+            "src": "/assets/instagram/video.mp4"
+        }
+
+    ]
+}

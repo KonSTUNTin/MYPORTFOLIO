@@ -1,0 +1,64 @@
+{
+    "name": "Название кейса",
+    "img": "/assets/morizmatik/header.jpg",
+    "content": [
+        {
+            "type": "link",
+            "path": "https://jetstyle.ru/portfolio/case/sozdanie-webvr-sajta-beloj-basni"
+        },
+        {
+            "type": "text",
+            "header": "Task",
+            "text": "To design a website for a beatmaker."
+        },
+        {
+            "type": "text",
+            "header": "Solution",
+            "text": "I designed this website using generative animation for the initial block and audio-visualization."
+        },
+        {
+            "type": "text",
+            "text": "Ascetic, dark-colored, formal design was used as a wrapper for the main part – music."
+        },
+        {
+            "type": "video",
+            "class": "wide",
+            "poster":  "/assets/morizmatik/poster0.jpg",
+            "src": "/assets/morizmatik/video0.mp4"
+        },
+        {
+            "type": "text",
+            "header": "",
+            "text": "The initial block animation reflects the author’s style – electronic music, hip-hop. This includes collages of patterns, pictures of tapes, colorful figures, and typography."
+        },
+        {
+            "type": "img",
+            "class": "wide",
+            "src": ["/assets/morizmatik/variants.jpg"]
+        },
+        {
+            "type": "text",
+            "text": "The player itself was designed as a nostalgic reference to audiotapes. The audio-visualization is being generated according to the settings of each track, as well. Every visualization can be used for designing posts on social networks."
+        },
+        {
+            "type": "video",
+            "class": "wide",
+            "poster":  "/assets/morizmatik/poster2.jpg",
+            "src": "/assets/morizmatik/video2.mp4"
+        },
+        {
+            "type": "img",
+            "class": "wide",
+            "src": ["/assets/morizmatik/array.jpg"]
+        },
+        {
+            "type": "text",
+            "text": "The website was designed to be used on every type of device, including mobile devices."
+        },
+        {
+            "type": "img",
+            "class": "wide",
+            "src": ["/assets/morizmatik/mobile.jpg"]
+        }
+    ]
+}

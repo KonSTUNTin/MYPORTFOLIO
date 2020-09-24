@@ -1,0 +1,100 @@
+{
+    "content": [
+        {
+            "type": "list",
+            "header": "Soft skills",
+            "list": [
+                "Creative and analytic thinking",
+                "Experience in generative design",
+                "Teamwork",
+                "Automatization of designing processes",
+                "Writing frameworks for user cases",
+                "Search for information, research",
+                "Creating Instagram masks",
+                "Generating ideas"
+            ]
+        },
+        {
+            "type": "list",
+            "header": "Hard skills",
+            "list": [
+                "Illustrator",
+                "Photoshop",
+                "After effects",
+                "Cinema 4D",
+                "Blender 3D",
+                "HTML + CSS",
+                "JavaScript",
+                "THREE.JS",
+                "React.JS",
+                "Spark AR Studio",
+                "Webflow",
+                "Keynote",
+                "Figma"
+            ]
+        },
+        {
+            "type": "job",
+            "header": "Working experience",
+            "content":[
+                {
+                    "info": "2017-2020, Jetstyle, senior designer",
+                    "list": [
+                       "VR, WEBVR interface",
+                       "UI/UX design",
+                       "Working in a team of product-designers",
+                       "Writing user cases",
+                       "Motion design and editing",
+                       "Modelling and rendering of 3d graphics",
+                       "Project’s front-end",
+                       "Conducting researches",
+                       "Writing of detailed",
+                       "Internal project cases",
+                       "Creating pre-sales",
+                       "Implementation of a design-system",
+                       "Graphic design",
+                       "Presentation layouts",
+                       "Design of complicated promo projects",
+                       "Working with international developers",
+                       "Evaluation of the costs of a project",
+                       "Creating masks for Instagram",
+                       "Internal workshops"
+                ]},
+                {
+                    "info": "2015-2017, Rolsh Studio, designer",
+                    "list": [
+                        "Technical and typographic design",
+                        "Presentation layouts",
+                        "Motion design and editing",
+                        "Modelling and rendering of 3d graphics",
+                        "UI/UX design",
+                        "Graphic design"
+                    ]
+                },
+                {
+                    "info": "2015, RIMEKS, designer, content\u2011manager",
+                    "list": [
+                        "Motion design and editing",
+                        "Modelling and rendering of 3d graphics",
+                        "UI/UX design",
+                        "HTML coding",
+                        "Preparing graphics and special offer materials for an online shop",
+                        "Graphic design"
+                    ]
+                }
+            ]  
+        },
+        {
+            "type": "list",
+            "header": "Hobby",
+            "list": [
+                "Running",
+                "Generative design",
+                "Psychology",
+                "Food and wine",
+                "Literature"
+            ]
+        }
+       
+    ]
+}

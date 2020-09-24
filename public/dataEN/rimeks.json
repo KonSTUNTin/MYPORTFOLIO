@@ -1,0 +1,62 @@
+{
+    "name": "Название кейса",
+    "img": "/assets/rimeks/header.jpg",
+    "content": [
+        {
+            "type": "link",
+            "path": "https://jetstyle.ru/portfolio/case/sozdanie-webvr-sajta-beloj-basni"
+        },
+        {
+            "type": "text",
+            "header": "Task",
+            "text": "To redesign the online shop Rimeks."
+        },
+        {
+            "type": "text",
+            "header": "Решение",
+            "text": "The created design is clean and friendly."
+        },
+        {
+            "type": "text",
+            "text": "The project was handed in to the developer, in process"
+        },
+        {
+            "type": "text",
+            "text": "The former front page was overwhelmed because of different banners and inconsistent icons. Thus, a new type of banners and special offer publications was designed by me, so that it could be maintained without designer’s help. The icons were switched to mini pictures."
+        },
+        {
+            "type": "img",
+            "class": "wide",
+            "src": ["/assets/rimeks/main.jpg"]
+        },
+        {
+            "type": "text",
+            "text": "Any product can be bought, purchased by installments, or it can have a special price. These elements were arranged hierarchically. Now the customer is not easily distracted by the number of colorful elements."
+        },
+        {
+            "type": "img",
+            "class": "wide",
+            "src": ["/assets/rimeks/desktop 1.jpg"]
+        },
+        {
+            "type": "text",
+            "text": "The catalogue was redrafted using different sizes of elements to add some diversity. After introducing the mini pictures, the catalogue came back to life."
+        },
+        {
+            "type": "img",
+            "class": "wide",
+            "src": ["/assets/rimeks/desktop 2.jpg", "/assets/rimeks/desktop 3.jpg", "/assets/rimeks/desktop 4.jpg"]
+        },
+        {
+            "type": "text",
+            "text": "I redesigned all the pages and the mobile version of the website."
+        },
+        {
+            "type": "video",
+            "class": "wide",
+            "poster":  "/assets/rimeks/mobile.jpg",
+            "src": "/assets/rimeks/mobile.mp4"
+        }
+       
+    ]
+}

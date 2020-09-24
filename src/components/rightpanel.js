@@ -1,17 +1,19 @@
 import React from 'react';
-import ProjectsData from '../data/projects.js'
 import {ProjectBlock} from './projectlayout.js'
 
 
 class RightPanel extends React.Component{ 
+  
   render(){
-    let element = ProjectsData[this.props.data.index];
+    let element = this.props.projects[this.props.data.index];
     return(
       <div ref = {this.props.linkRef} className ={this.props.data.status} onScroll = {this.props.onScroll} id = 'RightPanel'>
         {(this.props.data.content!= null)&&
           <>
             {this.props.data.aboutMe===0&&<ProjectHeader img = {this.props.data.content.img}/>}
+
             <CloseButton handler = {this.props.handler}/>
+
             {this.props.data.aboutMe===0&&<ProjectBlock
               inCase = {true}
               num = {element.index}
@@ -19,7 +21,9 @@ class RightPanel extends React.Component{
               img = {element.img}
               name={element.name}
               tags={element.tags}/>}
+
             <div className = 'ProjectContent'>
+              
             {this.props.data.content.content.map(
               (item, index)=>{
                 return(

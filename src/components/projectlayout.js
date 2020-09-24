@@ -1,7 +1,5 @@
 import React from 'react';
-import ProjectsData from '../data/projects.js'
 import {Mask, StaticMask} from './maskshapes.js'
-
 
 class Projects extends React.Component{ 
   constructor(props){
@@ -45,7 +43,7 @@ class Projects extends React.Component{
         <div id = 'projectMatrix'>
          <ProjectFilter filter = {this.state.filter} handler = {this.tagManager} tags4filter = {this.tags4filter}></ProjectFilter>
           {
-          ProjectsData.map((element, num) => {
+          this.props.projects.map((element, num) => {
 
             let check = 0;
             if(this.state.filter.indexOf("0")===-1){

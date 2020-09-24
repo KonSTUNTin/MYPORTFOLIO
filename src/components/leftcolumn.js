@@ -7,7 +7,7 @@ class LeftColumn extends React.Component{
           </div>
           <h1 id = 'aboutMe'>
             {(this.props.lang===1)&&<>Привет!<br/> Меня зовут<br/> Костя&nbsp;Остроухов.<br className ='mobile'/> Я проектирую, рендерю и&nbsp;кодю для&nbsp;web.</>}
-            {(this.props.lang===0)&&<>Hello!<br/>My name is&nbsp;Kostya Ostroukhov.<br/>I&nbsp;do&nbsp; projects, renders, and&nbsp;codes for&nbsp;WEB.</>}
+            {(this.props.lang===0)&&<>Hello!<br/>My name is&nbsp;Kostya.<br/>I&nbsp;design, render, and code for&nbsp;WEB.</>}
           </h1>
           <a id = 'myPage' onClick = {this.props.openAboutMe}>
             {(this.props.lang===1)&&<>ОБО МНЕ</>}

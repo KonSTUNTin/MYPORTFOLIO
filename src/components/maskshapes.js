@@ -21,7 +21,7 @@ class Mask extends React.Component{
                   cy={
                     Math.round(Math.random()) * 426 
                   } 
-                  r="1" fill = 'black'/>
+                  r="600" fill = 'black'/>
                 </clipPath>
     
     
