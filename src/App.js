@@ -108,6 +108,7 @@ class App extends React.Component{
   }
   render() {
     let myclass ='';
+    
     if(this.state.status === 'active'){myclass='hide'}
     return(
       <>

@@ -1,8 +1,14 @@
 import React from 'react';
 
 class Mask extends React.Component{
-    
+    constructor(props){
+            super(props)
+            this.x =  Math.round(Math.random()) * 426;
+            this.y =  Math.round(Math.random()) * 426;
+            
+    }
     render(){
+       
         return(
             <>
             <img style = {{display: 'none'}} onLoad = {this.props.loaderHandler} src={this.props.img}/>
@@ -15,15 +21,11 @@ class Mask extends React.Component{
                 </defs>
                 <clipPath id={"myClip" + this.props.num}>
                   <circle 
-                  cx={
-                    Math.round(Math.random()) * 426
-                  } 
-                  cy={
-                    Math.round(Math.random()) * 426 
-                  } 
+                  cx={this.x} 
+                  cy={this.y} 
                   r="600" fill = 'black'/>
                 </clipPath>
-    
+                {console.log(new Date())}
     
                 {(this.props.shape === 'flower')&&<>
                     <FlowerShape id = {this.props.num}/>
