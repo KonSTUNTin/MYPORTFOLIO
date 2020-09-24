@@ -42,14 +42,14 @@ class App extends React.Component{
   }
   languageDetect(){
     let config = {
-      'language': 'ru',
-      'country': 'RU'
+      'language': 'en',
+      'country': ''
     }
     let client = window.navigator ? (window.navigator.language ||
       window.navigator.systemLanguage ||
       window.navigator.userLanguage) : (config.language + "-" + config.country);
       if(client.toUpperCase().indexOf("RU" > -1)){
-        this.setState({lang:1})
+        this.setState({lang:0})
         console.log('ru')
       }
   }
@@ -110,8 +110,8 @@ class App extends React.Component{
       <>
         <MobileUpButton handler = {this.scrolltoTop} status = {this.state.scroll}/>
         <div id = 'MainContainer' ref = {this.myref} onScroll = {this.scrollHandler} className = {myclass}>
-          {(this.state.loaderProgress < 1)&&<Loader progress = {this.state.loaderProgress}></Loader>}
-          <LeftColumn openAboutMe = {this.pageAboutMeActivate} handler = {this.closeRightPanel}/>
+          {(this.state.loaderProgress < 1)&&<Loader lang = {this.state.lang} progress = {this.state.loaderProgress}></Loader>}
+          <LeftColumn lang = {this.state.lang} openAboutMe = {this.pageAboutMeActivate} handler = {this.closeRightPanel}/>
           <Projects loaderHandler = {this.loaderUpdate} handler = {this.rightPanelActivate}/>
         </div>
         <RightPanel onScroll = {this.scrollHandler} linkRef = {this.rightPanelRef} handler = {this.closeRightPanel} data = {this.state} />
@@ -142,7 +142,8 @@ class Loader extends React.Component{
   }
   render(){
     let star = convertUnicode("\u2738")
-    let string = "ЗAГРУЗКА"
+    let texts = ["LOADING", "ЗАГРУЗКА"];
+    let string = texts[this.props.lang];
     let progress = Math.floor(this.state.time) % (string.length + 1)
     let stringStart = string.slice(0, progress)
     let stringEnd = string.slice(progress, string.length)

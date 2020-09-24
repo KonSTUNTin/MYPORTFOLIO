@@ -6,10 +6,12 @@ class LeftColumn extends React.Component{
           <div id ='myPhoto' onClick = {this.props.handler}>
           </div>
           <h1 id = 'aboutMe'>
-            Привет!<br/> Меня зовут<br/> Костя&nbsp;Остроухов.<br className ='mobile'/> Я проектирую, рендерю и&nbsp;кодю для&nbsp;web.
+            {(this.props.lang===1)&&<>Привет!<br/> Меня зовут<br/> Костя&nbsp;Остроухов.<br className ='mobile'/> Я проектирую, рендерю и&nbsp;кодю для&nbsp;web.</>}
+            {(this.props.lang===0)&&<>Hello!<br/>My name is&nbsp;Kostya Ostroukhov.<br/>I&nbsp;do&nbsp; projects, renders, and&nbsp;codes for&nbsp;WEB.</>}
           </h1>
           <a id = 'myPage' onClick = {this.props.openAboutMe}>
-            ОБО МНЕ
+            {(this.props.lang===1)&&<>ОБО МНЕ</>}
+            {(this.props.lang===0)&&<>ABOUT ME</>}
           </a>
           <h4 id ='Contacts'>
             {"+7 950-64-99-204 totsamuion@yandex.ru "}<br/>
