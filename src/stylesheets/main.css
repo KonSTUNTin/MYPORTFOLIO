@@ -169,6 +169,7 @@ svg {
 
 circle {
   transition: transform 600ms;
+  will-change: transform;
 }
 
 .ProjectBlock circle {
