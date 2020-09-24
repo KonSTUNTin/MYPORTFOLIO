@@ -24,7 +24,7 @@ const ProjectsDataEN = [
         img: './images/fiit.jpg'
     },
     {
-        name: 'Website for\u00A0the\u00A0musician morizmatik',
+        name: 'Website for\u00A0the musician morizmatik',
         link: '../dataEN/morizmatik.json',
         tags: [
             'WEB DESIGN',

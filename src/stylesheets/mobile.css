@@ -39,7 +39,7 @@
         margin: 0px;
         margin-top: 10vh;
     }
-    .ProjectBlock {
+    #projectMatrix .ProjectBlock, .ProjectBlock {
         max-width: 90vw;
         height: auto;
         display: flex;
@@ -145,6 +145,7 @@
     .inCase h2{
         margin-top: var(--x);
         font-size: var(--x3);
+        line-height: 100%;
     }
     .textSection h4{
         margin-bottom: var(--x);
