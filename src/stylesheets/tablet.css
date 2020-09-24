@@ -11,7 +11,7 @@
     h1, #myPage {
         font-size: var(--x2);
     }
-    .section h4, .section p {
+    .section h4, .section p, .section ul {
         grid-column: 3 / 8;
     }
     .section h4{

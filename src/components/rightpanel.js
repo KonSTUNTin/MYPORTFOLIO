@@ -33,6 +33,7 @@ class RightPanel extends React.Component{
                   {(item.type === 'video')&&<VideoSection data = {item}/>}
                   {(item.type === 'list')&&<ListSection data = {item}/>}
                   {(item.type === 'job')&&<JobSection data = {item}/>}
+                  {(item.type === 'link')&&<LinkSection data = {item}/>}
                   </>
                 )
               }
@@ -54,6 +55,19 @@ class RightPanel extends React.Component{
       )
     }
   }
+
+  class LinkSection extends React.Component{
+    render(){
+      return(
+        <div className = {'linkSection section'}>
+          <a href = {this.props.data.path} target = 'blank'>
+            {this.props.data.text}
+          </a>
+        </div>
+      )
+    }
+  }
+
 
 
   class VideoSection extends React.Component{
@@ -102,7 +116,7 @@ class TextSection extends React.Component{
   render(){
     
     return(
-      <div className = 'textSection section'>
+      <div className = {'textSection section ' + this.props.data.myClass}>
         <h4>
           {this.props.data.header}
         </h4>

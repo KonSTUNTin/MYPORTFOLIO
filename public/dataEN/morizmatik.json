@@ -3,10 +3,6 @@
     "img": "/assets/morizmatik/header.jpg",
     "content": [
         {
-            "type": "link",
-            "path": "https://jetstyle.ru/portfolio/case/sozdanie-webvr-sajta-beloj-basni"
-        },
-        {
             "type": "text",
             "header": "Task",
             "text": "To design a website for a beatmaker."

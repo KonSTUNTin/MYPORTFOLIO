@@ -4,10 +4,12 @@
     "content": [
         {
             "type": "link",
-            "path": "https://jetstyle.ru/portfolio/case/sozdanie-webvr-sajta-beloj-basni"
+            "path": "https://www.instagram.com/kostrodesign/",
+            "text": "instagram.com/kostrodesign/"
         },
         {
             "type": "text",
+            "myClass": "wide",
             "text": "At some point I got interested in what can be drafted and animated using coding. I started my experiments, and then I published my results on an Instagram account. The projects vary from some random animations to drafters, constructors, and editors."
         },
         {

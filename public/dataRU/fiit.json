@@ -3,10 +3,6 @@
     "img": "/images/fiit_header.jpg",
     "content": [
         {
-            "type": "link",
-            "path": "https://jetstyle.ru/portfolio/case/sozdanie-webvr-sajta-beloj-basni"
-        },
-        {
             "type": "text",
             "header": "Задача",
             "text": "Придумать айдентику для нового учебного заведения."

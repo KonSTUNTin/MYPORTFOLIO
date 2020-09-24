@@ -255,7 +255,7 @@ div#clipContainer {
 }
 
 svg.oval.mask {
-  transform: translate(0%, -12%);
+  transform: translate(6%, -3%);
 }
 
 #loadingOutline {
@@ -282,7 +282,7 @@ svg.oval.mask {
 }
 
 .textSection h4 {
-  grid-column: 3;
+  grid-column: 3 / 5;
   font-weight: 800;
 }
 
@@ -421,4 +421,16 @@ li:before {
 div#avatarRow {
   display: flex;
   align-items: center;
+}
+
+.inCase svg.oval.mask {
+  transform: translateX(-16%);
+}
+
+.section a {
+  grid-column: 3/9;
+  font-size: var(--x2);
+}
+.textSection.section.wide p {
+  grid-column: 3/8;
 }

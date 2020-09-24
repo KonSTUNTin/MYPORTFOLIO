@@ -4,10 +4,12 @@
     "content": [
         {
             "type": "link",
-            "path": "https://jetstyle.ru/portfolio/case/sozdanie-webvr-sajta-beloj-basni"
+            "path": "https://www.instagram.com/kostrodesign/",
+            "text": "instagram.com/kostrodesign/"
         },
         {
             "type": "text",
+            "myClass": "wide",
             "text": "В\u00A0определённый момент мне стало интересно, что\u00A0можно нарисовать и\u00A0анимировать при\u00A0помощи программирования. Я\u00A0начал с\u00A0этим экспериментировать, а\u00A0результаты публиковать в\u00A0инстаграмм аккаунт. Проекты разнятся от\u00A0простых рандомных анимаций до\u00A0рисовалок, конструкторов и\u00A0редакторов."
         },
         {

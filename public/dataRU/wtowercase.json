@@ -3,7 +3,8 @@
     "content": [
         {
             "type": "link",
-            "path": "https://jetstyle.ru/portfolio/case/sozdanie-webvr-sajta-beloj-basni"
+            "path": "https://jetstyle.ru/portfolio/case/sozdanie-webvr-sajta-beloj-basni",
+            "text": "jetstyle.ru/portfolio"
         },
         {
             "type": "text",

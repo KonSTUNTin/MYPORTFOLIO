@@ -3,10 +3,6 @@
     "img": "/assets/svel/header.jpg",
     "content": [
         {
-            "type": "link",
-            "path": "https://jetstyle.ru/portfolio/case/sozdanie-webvr-sajta-beloj-basni"
-        },
-        {
             "type": "text",
             "header": "Задача",
             "text": "Сделать редизайн сайта производителя электрооборудования"

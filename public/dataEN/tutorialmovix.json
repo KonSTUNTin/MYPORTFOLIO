@@ -3,10 +3,6 @@
     "img": "/assets/movixvr/header.jpg",
     "content": [
         {
-            "type": "link",
-            "path": "https://jetstyle.ru/portfolio/case/sozdanie-webvr-sajta-beloj-basni"
-        },
-        {
             "type": "text",
             "header": "Task",
             "text": "To create a video instruction for the interface of a console Movix."
