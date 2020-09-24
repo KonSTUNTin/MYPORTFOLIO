@@ -75,7 +75,8 @@ class App extends React.Component{
     }
   }
   scrolltoTop(){
-    if(this.state.index === null){this.myref.current.scrollTo(0, 0)
+    if(this.state.status.indexOf('active')<0){
+      this.myref.current.scrollTo(0, 0)
     }else{
       this.rightPanelRef.current.scrollTo(0, 0)
     }
