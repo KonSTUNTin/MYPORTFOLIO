@@ -19,7 +19,8 @@ class App extends React.Component{
       index: null,
       scroll: null,
       loaderProgress: 0,
-      aboutMe: 0
+      aboutMe: 0,
+      lang: 0
     }
 
     this.myref = React.createRef()
@@ -32,7 +33,27 @@ class App extends React.Component{
     this.scrollHandler = this.scrollHandler.bind(this)
     this.scrolltoTop = this.scrolltoTop.bind(this)
     this.pageAboutMeActivate = this.pageAboutMeActivate.bind(this)
+    this.languageDetect = this.languageDetect.bind(this)
+
+    
   }
+  componentDidMount(){
+    this.languageDetect()
+  }
+  languageDetect(){
+    let config = {
+      'language': 'ru',
+      'country': 'RU'
+    }
+    let client = window.navigator ? (window.navigator.language ||
+      window.navigator.systemLanguage ||
+      window.navigator.userLanguage) : (config.language + "-" + config.country);
+      if(client.toUpperCase().indexOf("RU" > -1)){
+        this.setState({lang:1})
+        console.log('ru')
+      }
+  }
+
   loaderUpdate(){
     this.loaded++
     let progress = this.loaded / this.loadNum ;
