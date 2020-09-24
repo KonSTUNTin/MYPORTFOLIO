@@ -49,7 +49,7 @@ class App extends React.Component{
       window.navigator.systemLanguage ||
       window.navigator.userLanguage) : (config.language + "-" + config.country);
       if(client.toUpperCase().indexOf("RU" > -1)){
-        this.setState({lang:0})
+        this.setState({lang:1})
         console.log('ru')
       }
   }
