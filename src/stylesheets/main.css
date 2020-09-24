@@ -212,7 +212,7 @@ div#RightPanel {
   transition: transform 500ms;
   display: grid;
   grid-template-columns: repeat(9, 11.1%);
-  grid-template-rows: var(--x3) 15vh 25vh 20vh 1fr;
+  grid-template-rows: var(--x3) 200px 200px 200px 1fr;
 
 }
 
@@ -220,7 +220,7 @@ div#RightPanel.active {
   transform: translateX(0%);
 }
 
-#Contacts::before {
+/* #Contacts::before {
   content: '';
   display: block;
   width: 420px;
@@ -231,7 +231,7 @@ div#RightPanel.active {
   background-size: 100%;
   background-repeat: no-repeat;
   z-index: -1;
-}
+} */
 
 div#clipContainer {
   grid-area: projects;
@@ -287,9 +287,9 @@ svg.oval.mask {
   grid-column: 5 / 8;
 }
 
-h4#Contacts {
+/* h4#Contacts {
   margin-top: 90px;
-}
+} */
 
 .inCase .projectText {
   margin-left: 0px;
