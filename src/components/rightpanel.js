@@ -12,7 +12,7 @@ class RightPanel extends React.Component{
           <>
             <ProjectHeader img = {this.props.data.content.img}/>
 
-            <CloseButton handler = {this.props.handler}/>
+            <CloseButton lang = {this.props.lang} handler = {this.props.handler}/>
 
             {this.props.data.aboutMe===0&&<ProjectBlock
               inCase = {true}
@@ -50,7 +50,10 @@ class RightPanel extends React.Component{
       return(
         <div onClick = {this.props.handler} className = 'closeButton'>
              <div className = 'crossIcon'/>
-            <span>ЗАКРЫТЬ</span>
+            <span>
+              {(this.props.lang===1)&&"ЗАКРЫТЬ"}
+              {(this.props.lang===0)&&"CLOSE"}
+            </span>
         </div>
       )
     }

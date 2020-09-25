@@ -12,18 +12,6 @@ const ProjectsDataRU = [
         img: './images/wtower.jpg'
     },
     {
-        name: 'Айдентика ФИИТ',
-        link: '/dataRU/fiit.json',
-        tags: [
-            'ANIMATION',
-            'WEB DESIGN',
-            'CODING',
-            'BRANDING'
-        ],
-        mask: 'circle',
-        img: './images/fiit.jpg'
-    },
-    {
         name: 'Сайт для музыканта morizmatik',
         link: '../dataRU/morizmatik.json',
         tags: [

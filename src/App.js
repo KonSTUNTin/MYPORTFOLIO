@@ -26,8 +26,8 @@ class App extends React.Component{
       window.navigator.systemLanguage ||
       window.navigator.userLanguage) : (config.language + "-" + config.country);
     if(client.toUpperCase().indexOf("RU" > -1)){
-      // lang = 1
-      // ProjectsData = ProjectsDataRU
+      lang = 1
+      ProjectsData = ProjectsDataRU
     }
     this.state ={
       status: 'not',
@@ -121,13 +121,13 @@ class App extends React.Component{
     return(
       <>
         {this.ex}
-        <MobileUpButton handler = {this.scrolltoTop} status = {this.state.scroll}/>
+        <MobileUpButton lang = {this.state.lang} handler = {this.scrolltoTop} status = {this.state.scroll}/>
         <div id = 'MainContainer' ref = {this.myref} onScroll = {this.scrollHandler} className = {myclass}>
           {(this.state.loaderProgress < 1)&&<Loader lang = {this.state.lang} progress = {this.state.loaderProgress}></Loader>}
           <LeftColumn changeLanguage = {this.changeLanguage} lang = {this.state.lang} openAboutMe = {this.pageAboutMeActivate} handler = {this.closeRightPanel}/>
           <Projects loaderHandler = {this.loaderUpdate} handler = {this.rightPanelActivate} projects = {this.ProjectsData}/>
         </div>
-        <RightPanel projects = {this.ProjectsData} onScroll = {this.scrollHandler} linkRef = {this.rightPanelRef} handler = {this.closeRightPanel} data = {this.state} />
+        <RightPanel lang = {this.state.lang} projects = {this.ProjectsData} onScroll = {this.scrollHandler} linkRef = {this.rightPanelRef} handler = {this.closeRightPanel} data = {this.state} />
       </>
     )
   }

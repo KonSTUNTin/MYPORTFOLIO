@@ -1,11 +1,11 @@
 {
     "name": "Название кейса",
-    "img": "/images/fiit_header.jpg",
+    "img": "/assets/instagram/header.jpg",
     "content": [
         {
             "type": "link",
             "path": "https://www.instagram.com/kostrodesign/",
-            "text": "instagram.com/kostrodesign/"
+            "text": "instagram.com/kostrodesign"
         },
         {
             "type": "text",

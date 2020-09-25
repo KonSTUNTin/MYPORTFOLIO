@@ -12,19 +12,7 @@ const ProjectsDataEN = [
         img: './images/wtower.jpg'
     },
     {
-        name: 'FIIT branding',
-        link: '/dataEN/fiit.json',
-        tags: [
-            'ANIMATION',
-            'WEB DESIGN',
-            'CODING',
-            'BRANDING'
-        ],
-        mask: 'circle',
-        img: './images/fiit.jpg'
-    },
-    {
-        name: 'Website for\u00A0the musician morizmatik',
+        name: 'Website for the\u00A0musician morizmatik',
         link: '../dataEN/morizmatik.json',
         tags: [
             'WEB DESIGN',
