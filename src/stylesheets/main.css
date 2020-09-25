@@ -212,6 +212,7 @@ div#RightPanel {
   height: 100vh;
   z-index: 7;
   width: calc(100vw - var(--left) - var(--margin) - var(--x3) * 2);
+  max-width: calc(1392px + 50vw - 960px);
   right: 0px;
   transform: translateX(100%);
   transition: transform 500ms;
@@ -433,4 +434,12 @@ div#avatarRow {
 }
 .textSection.section.wide p {
   grid-column: 3/8;
+}
+body {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+root {
+  max-width: 1920px;
 }
