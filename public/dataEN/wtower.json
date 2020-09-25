@@ -1,6 +1,6 @@
 {
-    "name": "Название кейса",
-    "img": "/assets/wtower/header.jpg",
+    "poster":  "/assets/wtower/start.jpg",
+    "path": "/assets/wtower/start.mp4",
     "content": [
         {
             "type": "link",

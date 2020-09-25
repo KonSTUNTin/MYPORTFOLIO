@@ -1,6 +1,6 @@
 {
-    "name": "Название кейса",
-    "img": "/assets/morizmatik/header.jpg",
+    "poster":  "/assets/morizmatik/poster0.jpg",
+    "path": "/assets/morizmatik/video0.mp4",
     "content": [
         {
             "type": "text",
@@ -15,12 +15,6 @@
         {
             "type": "text",
             "text": "Ascetic, dark-colored, formal design was used as\u00A0a\u00A0wrapper for the main part – music."
-        },
-        {
-            "type": "video",
-            "class": "wide",
-            "poster":  "/assets/morizmatik/poster0.jpg",
-            "src": "/assets/morizmatik/video0.mp4"
         },
         {
             "type": "text",

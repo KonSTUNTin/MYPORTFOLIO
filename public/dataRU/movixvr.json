@@ -1,6 +1,6 @@
 {
-    "name": "Название кейса",
-    "img": "/assets/movixvr/header.jpg",
+    "poster": "/assets/movixvr/video.jpg",
+    "path": "/assets/movixvr/video.mp4",
     "content": [
         {
             "type": "link",
@@ -16,12 +16,6 @@
             "type": "text",
             "header": "Роль в\u00A0проекте",
             "text": "Проект сделан в\u00A0Jetstyle. C\u00A0арт\u2011директором подготовил дизайн и\u00A0анимацию для\u00A0лендинга, затем заверстал его. Запустили проект за\u00A0неделю."
-        },
-        {
-            "type": "video",
-            "class": "wide",
-            "poster": "/assets/movixvr/video.jpg",
-            "src": "/assets/movixvr/video.mp4"
         }
     ]
 }

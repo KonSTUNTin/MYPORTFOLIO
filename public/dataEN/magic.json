@@ -1,6 +1,6 @@
 {
-    "name": "Название кейса",
-    "img": "/assets/arvr/header.jpg",
+    "poster": "/assets/arvr/start.jpg",
+    "path": "/assets/arvr/start.mp4",
     "content": [
         {
             "type": "link",
@@ -21,12 +21,6 @@
             "type": "text",
             "header": "",
             "text": "Every block contains its own\u00A0mechanics of\u00A0interaction: in the\u00A0initial block it’s parallax, in the next ones it’s either an\u00A0interactive smartphone with AR, or an\u00A0animation, that is\u00A0playing while the\u00A0user is\u00A0scrolling."
-        },
-        {
-            "type": "video",
-            "class": "wide",
-            "poster": "/assets/arvr/start.jpg",
-            "src": "/assets/arvr/start.mp4"
         },
         {
             "type": "video",

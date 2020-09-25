@@ -1,6 +1,6 @@
 {
-    "name": "Название кейса",
-    "img": "/assets/svel/header.jpg",
+    "poster":  "/assets/svel/main.jpg",
+    "path": "/assets/svel/main.mp4",
     "content": [
         {
             "type": "text",
@@ -20,12 +20,6 @@
             "header": "Main page",
             "type": "text",
             "text": "Cases and strategic directions of\u00A0the\u00A0company are highlighted on\u00A0the\u00A0front page. The product is demonstrated as\u00A0a\u00A0slider with renders and pictures."
-        },
-        {
-            "type": "video",
-            "class": "wide",
-            "poster":  "/assets/svel/main.jpg",
-            "src": "/assets/svel/main.mp4"
         },
         {
             "header": "Catalog",

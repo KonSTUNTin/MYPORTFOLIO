@@ -1,5 +1,6 @@
 {
-    "img": "/assets/wtowercase/header.jpg",
+    "poster": "/assets/wtowercase/video.jpg",
+    "path": "/assets/wtowercase/video.mp4",
     "content": [
         {
             "type": "link",
@@ -19,12 +20,6 @@
         {
             "type": "text",
             "text": "На\u00A0проекте впервые использовал вариативный шрифт и\u00A0библиотеку для\u00A0анимаций Lottie, узнал ограничения и\u00A0нюансы при\u00A0создании и\u00A0конвертировании анимаций для\u00A0веба."
-        },
-        {
-            "type": "video",
-            "class": "wide",
-            "poster": "/assets/wtowercase/video.jpg",
-            "src": "/assets/wtowercase/video.mp4"
         },
         {
             "type": "video",

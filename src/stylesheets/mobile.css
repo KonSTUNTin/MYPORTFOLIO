@@ -8,10 +8,21 @@
         flex-flow: column;
         z-index: 8;
     }
+    .langSwitcher {
+        font-size: var(--x2);
+    }
+
+    .closeButton {
+        position: absolute;
+        margin-top: 120px;
+        margin-left: var(--x);
+        width: 200px;
+        justify-content: start;
+    }
 
     h4#Contacts {
         margin-top: var(--x2);
-        font-size: 18px;
+        font-size: var(--x2);
     }
 
     #Contacts::before {
@@ -39,7 +50,7 @@
     }
 
     h1 {
-        font-size: 18px;
+        font-size: var(--x2);
     }
 
     div#projectMatrix {
@@ -60,9 +71,10 @@
 
     svg {
         position: static;
+        max-height: 100vh;
     }
 
-    .projectText {
+    .ProjectBlock .projectText {
         opacity: 1;
         margin: 0px;
         width: 100%;
@@ -89,15 +101,13 @@
         display: none
     }
 
-    .section {
-        display: block;
-        margin-bottom: var(--x3);
+    .textSection, .listSection, .jobSection, .linkSection {
         margin-left: var(--x2);
         margin-right: var(--x2);
     }
-
-    .projectHeader {
-        height: 50vh;
+    .section{
+        display: block;
+        margin-bottom: var(--x3);
     }
 
     div#clipContainer {
@@ -111,12 +121,6 @@
 
     svg.oval.mask {
         transform: translate(8%, -4%);
-    }
-
-    .closeButton {
-        position: absolute;
-        top: calc(50vh - var(--x2));
-        margin-left: var(--x2);
     }
 
     div#RightPanel {
@@ -162,8 +166,11 @@
         animation: avatarSwitch 3s infinite step-start;
     }
 
-    .inCase .projectText {
-        margin-bottom: var(--x4);
+    .projectText.inCase  {
+        margin-bottom: var(--x3);
+        margin-left: var(--x2);
+        margin-right: var(--x2);
+        width: 90%;
     }
 
     .inCase h2 {
@@ -204,7 +211,7 @@
     }
 
     #myPage {
-        font-size: 18px;
+        font-size: var(--x2);
         margin-top: var(--x2);
     }
 
@@ -212,10 +219,21 @@
         justify-content: space-between;
         margin-bottom: var(--x2);
     }
-    .aboutMe .ProjectContent {
-        margin-top: 60px;
-    }
     .listSection h4{
         margin-bottom: var(--x2);
+    }
+    .clipVideo {
+        width:100%;
+    }
+    .imgSection.myPhoto {
+        height: 200px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+    .imgSection.wide img {
+        grid-column: 1/10;
+        width: auto;
+        height: 100%;
     }
 }

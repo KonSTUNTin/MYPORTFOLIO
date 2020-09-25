@@ -86,15 +86,20 @@ class App extends React.Component{
       './dataEN/aboutme.json',
       './dataRU/aboutme.json',
     ]
-    let response = await fetch(
-      path[this.state.lang], {
-        headers : { 
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-         }}
-      );
-    let data = await response.json();
-    this.setState({content:data, status:"active aboutMe", scroll: null, aboutMe: 1})
+    if(this.state.status.indexOf("active")>-1){
+      this.closeRightPanel()
+    } else {
+      let response = await fetch(
+        path[this.state.lang], {
+          headers : { 
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+           }}
+        );
+      let data = await response.json();
+      this.setState({content:data, status:"active aboutMe", scroll: null, aboutMe: 1})
+    }
+    
 }
   scrollHandler(event){
     let scroll = event.target.scrollTop;

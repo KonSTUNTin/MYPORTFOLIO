@@ -1,5 +1,6 @@
 {
-    "img": "/assets/wtowercase/header.jpg",
+    "poster": "/assets/wtowercase/video.jpg",
+    "path": "/assets/wtowercase/video.mp4",
     "content": [
         {
             "type": "link",
@@ -19,12 +20,6 @@
         {
             "type": "text",
             "text": "During this\u00A0project I\u00A0used variable fonts and animation library Lottie for\u00A0the\u00A0first time, I figured out the\u00A0restrictions and nuances of\u00A0creating and converting animations for the\u00A0web."
-        },
-        {
-            "type": "video",
-            "class": "wide",
-            "poster": "/assets/wtowercase/video.jpg",
-            "src": "/assets/wtowercase/video.mp4"
         },
         {
             "type": "video",

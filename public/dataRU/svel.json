@@ -1,6 +1,6 @@
 {
-    "name": "Название кейса",
-    "img": "/assets/svel/header.jpg",
+    "poster":  "/assets/svel/main.jpg",
+    "path": "/assets/svel/main.mp4",
     "content": [
         {
             "type": "text",
@@ -20,12 +20,6 @@
             "header": "Главная",
             "type": "text",
             "text": "На главной выделены кейсы, стратегические направления компании. Продукция отражена в\u00A0виде слайдера с\u00A0рендерами и\u00A0фотографиями."
-        },
-        {
-            "type": "video",
-            "class": "wide",
-            "poster":  "/assets/svel/main.jpg",
-            "src": "/assets/svel/main.mp4"
         },
         {
             "header": "Каталог",

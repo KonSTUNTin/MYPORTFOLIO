@@ -2,6 +2,7 @@
   font-family: 'IBM Plex Sans', sans-serif;
   margin: 0px;
   padding: 0px;
+  font-size: 18px;
 }
 :root{
   --x: 12px;
@@ -51,18 +52,19 @@ span.red {
 h1 {
   font-size: var(--x3);
   font-weight: 400;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
-h4 {
+h4, h4 a {
   font-size: var(--x2);
   font-weight: 400;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 #myPage {
   font-weight: 400;
-  text-transform: uppercase;
+  font-size: var(--x2);
+  /* text-transform: uppercase; */
   cursor: pointer;
 }
 span{
@@ -181,7 +183,8 @@ svg{
   transform: scale3d(1, 1, 1);
 }
 
-.projectText {
+
+.ProjectBlock .projectText {
   display: flex;
   flex-flow: column;
   transition: opacity 500ms;
@@ -196,8 +199,18 @@ svg{
   z-index: 6;
 }
 
+.projectText.inCase {
+  grid-column: 3/8;
+  margin-top: var(--x3);
+  margin-bottom: var(--x3);
+}
+
 .projectText h2 {
   margin-top: var(--x);
+}
+
+.inCase h2 {
+  font-size: var(--x3);
 }
 
 svg.circle.mask {
@@ -218,7 +231,6 @@ div#RightPanel {
   transition: transform 500ms;
   display: grid;
   grid-template-columns: repeat(9, 11.1%);
-  grid-template-rows: var(--x3) 200px 200px 200px 1fr;
 
 }
 div#RightPanel.aboutMe{ 
@@ -266,9 +278,8 @@ svg.oval.mask {
 
 .projectHeader {
   grid-column: 1/10;
-  grid-row: 1/4;
-  background-size: cover;
-  background-position: 50%;
+  width: 100%;
+  height: auto;
 }
 
 .ProjectBlock.inCase {
@@ -279,7 +290,6 @@ svg.oval.mask {
 
 .ProjectContent {
   grid-column: 1 / 10;
-  grid-row: 5;
 }
 
 .textSection h4 {
@@ -294,10 +304,6 @@ svg.oval.mask {
 /* h4#Contacts {
   margin-top: 90px;
 } */
-
-.inCase .projectText {
-  margin-left: 0px;
-}
 
 .inCase svg.mask {
   transform: translateX(-20%);
@@ -329,11 +335,12 @@ svg.oval.mask {
   background-color: white;
   grid-column: 1;
   display: flex;
+  position: fixed;
+  top: var(--x3);
   justify-content: center;
   justify-items: center;
   align-items: center;
-  margin-left: var(--x3);
-  grid-row: 2;
+  margin-left: var( --x3);
   z-index: 9;
   cursor: pointer;
 }
@@ -346,6 +353,15 @@ div#filter {
 span.active.tag {
   color: red;
 }
+
+.ProjectBlock h2 {
+  font-size: var(--x2);
+}
+
+p {
+  line-height: 150%;
+}
+
 #filter span.tag {
   padding: var(--x);
   cursor: pointer
@@ -369,7 +385,7 @@ svg.romb.mask {
 
 .aboutMe .ProjectContent {
   grid-column: 1 / 10;
-  grid-row: 5;
+  grid-row: 1;
 }
 
 .jobSection h4 {
@@ -442,4 +458,7 @@ body {
 }
 root {
   max-width: 1920px;
+}
+.clipVideo {
+  grid-column: 1/10;
 }

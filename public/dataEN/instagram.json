@@ -1,6 +1,6 @@
 {
-    "name": "Название кейса",
-    "img": "/assets/instagram/header.jpg",
+    "poster": "/assets/instagram/poster.jpg",
+    "path": "/assets/instagram/video.mp4",
     "content": [
         {
             "type": "link",
@@ -11,12 +11,6 @@
             "type": "text",
             "myClass": "wide",
             "text": "At some point I\u00A0got interested in what can be drafted and animated using coding. I started my experiments, and then I\u00A0published my results on\u00A0an\u00A0Instagram account. The projects vary from some random animations to\u00A0drafters, constructors, and\u00A0editors."
-        },
-        {
-            "type": "video",
-            "class": "wide",
-            "poster": "/assets/instagram/poster.jpg",
-            "src": "/assets/instagram/video.mp4"
         }
 
     ]

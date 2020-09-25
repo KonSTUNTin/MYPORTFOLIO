@@ -13,7 +13,7 @@
       }
       div#avatarRow {
         justify-content: start;
-        margin-bottom: var(--x2);
+        margin-bottom: var(--x3);
       }
       .section {
         display: grid;

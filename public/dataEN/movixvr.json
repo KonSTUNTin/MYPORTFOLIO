@@ -1,6 +1,6 @@
 {
-    "name": "Название кейса",
-    "img": "/assets/movixvr/header.jpg",
+    "poster": "/assets/movixvr/video.jpg",
+    "path": "/assets/movixvr/video.mp4",
     "content": [
         {
             "type": "link",
@@ -16,12 +16,6 @@
             "type": "text",
             "header": "Part in\u00A0the project",
             "text": "The project was made while working at\u00A0Jetstyle. With the art director I created the\u00A0design and animations for the\u00A0landing page, and then I made it up. We managed to\u00A0initiate the\u00A0project within a\u00A0week."
-        },
-        {
-            "type": "video",
-            "class": "wide",
-            "poster": "/assets/movixvr/video.jpg",
-            "src": "/assets/movixvr/video.mp4"
         }
     ]
 }

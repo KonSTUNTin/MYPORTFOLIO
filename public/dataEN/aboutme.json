@@ -2,6 +2,11 @@
     "img": "/images/myPhoto.jpg",
     "content": [
         {
+            "type": "img",
+            "class": "wide myPhoto",
+            "src": ["/images/myPhoto.jpg"]
+        },
+        {
             "type": "list",
             "header": "Soft skills",
             "list": [

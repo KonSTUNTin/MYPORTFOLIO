@@ -1,5 +1,5 @@
 import React from 'react';
-import {ProjectBlock} from './projectlayout.js'
+import {ProjectText} from './projectlayout.js'
 
 
 class RightPanel extends React.Component{ 
@@ -10,15 +10,16 @@ class RightPanel extends React.Component{
       <div ref = {this.props.linkRef} className ={this.props.data.status} onScroll = {this.props.onScroll} id = 'RightPanel'>
         {(this.props.data.content!= null)&&
           <>
-            <ProjectHeader img = {this.props.data.content.img}/>
-
-            <CloseButton lang = {this.props.lang} handler = {this.props.handler}/>
-
-            {this.props.data.aboutMe===0&&<ProjectBlock
-              inCase = {true}
+          
+           
+           {this.props.data.aboutMe===0&&<ProjectHeader 
+            poster = {this.props.data.content.poster}
+            src = {this.props.data.content.path}
+            />}
+             <CloseButton lang = {this.props.lang} handler = {this.props.handler}/>
+            {this.props.data.aboutMe===0&&<ProjectText
               num = {element.index}
-              mask = {element.mask} 
-              img = {element.img}
+              shape = 'inCase'
               name={element.name}
               tags={element.tags}/>}
 
@@ -107,9 +108,11 @@ class ImgSection extends React.Component{
 class ProjectHeader extends React.Component{
   render(){
     return(
-      <>
-      <div className = 'projectHeader' style = {{backgroundImage: 'url(' + this.props.img + ')'}} ></div>
-      </>
+        <div className = "clipVideo">
+          <video className = 'projectHeader' poster={this.props.poster} autoPlay="autoplay" muted loop="loop" controls>
+            <source src={this.props.src} type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+          </video>
+        </div>
     )
   }
 }

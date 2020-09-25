@@ -1,6 +1,6 @@
 {
-    "name": "Название кейса",
-    "img": "/assets/rimeks/header.jpg",
+    "poster":  "/assets/rimeks/mobile.jpg",
+    "path": "/assets/rimeks/mobile.mp4",
     "content": [
         {
             "type": "text",

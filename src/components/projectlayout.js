@@ -54,7 +54,7 @@ class Projects extends React.Component{
               check = 1
             }
     
-            if(check===this.state.filter.length){
+            if(check>=1){
               return(
                 <ProjectBlock 
                     key = {'project' + num}
@@ -156,4 +156,4 @@ class ProjectText extends React.Component{
     }
 }
  
-export {Projects, ProjectBlock}
+export {Projects, ProjectBlock, ProjectText}
