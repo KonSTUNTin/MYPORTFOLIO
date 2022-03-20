@@ -1,5 +1,17 @@
 const ProjectsDataRU = [
     {
+        name: 'Редизайн DragonZil',
+        link: '/dataEN/dragons.json',
+        tags: [
+            'ANIMATION',
+            '3D',
+            'WEB DESIGN',
+            'CODING'
+        ],
+        mask: 'flower',
+        img: './images/wtower.jpg'
+    },
+    {
         name: 'WEBVR САЙТ БEЛОЙ БАШНИ',
         link: '/dataRU/wtower.json',
         tags: [

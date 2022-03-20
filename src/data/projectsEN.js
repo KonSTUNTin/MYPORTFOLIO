@@ -1,5 +1,17 @@
 const ProjectsDataEN = [
     {
+        name: 'Редизайн DragonZil',
+        link: '/dataEN/dragons.json',
+        tags: [
+            'ANIMATION',
+            '3D',
+            'WEB DESIGN',
+            'CODING'
+        ],
+        mask: 'flower',
+        img: './images/wtower.jpg'
+    },
+    {
         name: 'WebVR site for\u00A0The\u00A0White Tower',
         link: '/dataEN/wtower.json',
         tags: [
