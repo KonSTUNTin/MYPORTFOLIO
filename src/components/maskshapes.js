@@ -6,11 +6,11 @@ class Mask extends React.Component{
             this.x =  Math.round(Math.random()) * 426;
             this.y =  Math.round(Math.random()) * 426;
             
-            if(this.props.shape === 'flower'){this.shape = <FlowerShape id = {this.props.num}/>}
-            if(this.props.shape === 'circle'){this.shape = <CircleShape id = {this.props.num}/>}
-            if(this.props.shape === 'oval'){this.shape = <OvalShape id = {this.props.num}/>}
-            if(this.props.shape === 'cross'){this.shape = <CrossShape id = {this.props.num}/>}
-            if(this.props.shape === 'romb'){this.shape = <RombShape id = {this.props.num}/>}
+            if(this.props.shape === 'flower'){this.shape = <FlowerShape id = {this.props.num}/>; this.patterntransform = "scale(1 1)"}
+            if(this.props.shape === 'circle'){this.shape = <CircleShape id = {this.props.num}/> ; this.patterntransform = "scale(1 1)"}
+            if(this.props.shape === 'oval'){this.shape = <OvalShape id = {this.props.num}/>; this.patterntransform = "scale(1.2 1) translate(-32 0)"}
+            if(this.props.shape === 'cross'){this.shape = <CrossShape id = {this.props.num}/>; this.patterntransform = "scale(1 1)"}
+            if(this.props.shape === 'romb'){this.shape = <RombShape id = {this.props.num}/>; this.patterntransform = "scale(1 1)"}
     }
     render(){
        
@@ -19,7 +19,7 @@ class Mask extends React.Component{
             <img style = {{display: 'none'}} onLoad = {this.props.loaderHandler} src={this.props.img}/>
             <svg className = {this.props.shape + ' mask'} viewBox="0 0 426 426"  fill="none" xmlns="http://www.w3.org/2000/svg">
                 <defs>
-                  <pattern id={"pattern" + this.props.num} patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <pattern id={"pattern" + this.props.num} patternContentUnits="objectBoundingBox" width="1" height="1" patternTransform = {this.patterntransform}>
                   <use xlinkHref={"#image" + this.props.num} transform="scale(.001)"/>
                   </pattern>
                   <image id ={"image" + this.props.num} x="0" y="0" height="1024" width="1024"  href={this.props.img}/>

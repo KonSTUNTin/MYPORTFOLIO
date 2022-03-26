@@ -1,5 +1,15 @@
 const ProjectsDataEN = [
     {
+        name: 'Logo and\u00A0brand identity for\u00A0FIIT',
+        link: '/dataEN/fiit.json',
+        tags: [
+            '3D',
+            'WEB DESIGN'
+        ],
+        mask: 'oval',
+        img: './images/fiit_2.png'
+    },
+    {
         name: 'ZILPay cryptowallet redesign',
         link: '/dataEN/zilpay.json',
         tags: [

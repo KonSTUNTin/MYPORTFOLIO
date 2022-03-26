@@ -1,4 +1,14 @@
-const ProjectsDataRU = [
+const ProjectsDataRU = [ 
+    {
+        name: 'Логотип и\u00A0брендбук для\u00A0ФИИТ',
+        link: '/dataEN/fiit.json',
+        tags: [
+            '3D',
+            'WEB DESIGN'
+        ],
+        mask: 'oval',
+        img: './images/fiit_2.png'
+    },
     {
         name: 'Дизайн криптокошелька ZILPay',
         link: '/dataEN/zilpay.json',
