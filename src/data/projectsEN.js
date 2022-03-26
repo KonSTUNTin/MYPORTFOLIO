@@ -1,15 +1,23 @@
 const ProjectsDataEN = [
     {
-        name: 'Редизайн DragonZil',
+        name: 'ZILPay cryptowallet redesign',
+        link: '/dataEN/zilpay.json',
+        tags: [
+            '3D',
+            'WEB DESIGN'
+        ],
+        mask: 'circle',
+        img: './images/zilpay.png'
+    },
+    {
+        name: 'DragonZIL redesign',
         link: '/dataEN/dragons.json',
         tags: [
-            'ANIMATION',
             '3D',
-            'WEB DESIGN',
-            'CODING'
+            'WEB DESIGN'
         ],
-        mask: 'flower',
-        img: './images/wtower.jpg'
+        mask: 'romb',
+        img: './images/dragons.jpg'
     },
     {
         name: 'WebVR site for\u00A0The\u00A0White Tower',

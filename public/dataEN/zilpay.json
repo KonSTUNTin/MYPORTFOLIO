@@ -1,0 +1,26 @@
+{
+    "name": "Редизайн DragonZil",
+    "poster": "/assets/dragons/poster_1.jpg",
+    "path": "/assets/zilpay/screens.mp4",
+    "content": [
+        {
+            "type": "text",
+            "header": "Task",
+            "text": "To make redesign of cryptowallet browser extension"
+        },
+        {
+            "type": "text",
+            "header": "Solution",
+            "text": "I developed a user-friendly and beautiful user interface design, as well as a key visual for the ZILPay brand. This project was interesting because I learned about crypto and operations with it."
+        },
+        {
+            "type": "img",
+            "class": "wide",
+            "src": [
+                "/assets/zilpay/nft.jpg",
+                "/assets/zilpay/registartion.jpg",
+                "/assets/zilpay/settings.jpg"
+            ]
+        }
+    ]
+}

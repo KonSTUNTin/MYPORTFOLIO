@@ -1,0 +1,53 @@
+{
+    "name": "Редизайн DragonZil",
+    "poster": "/assets/dragons/poster_1.jpg",
+    "path": "/assets/dragons/dragons_main.mp4",
+    "content": [
+        {
+            "type": "text",
+            "header": "Задача",
+            "text": "Сделать редизайн для\u00A0игры в\u00A0веб с\u00A0драконами и\u00A0криптовалютами."
+        },
+        {
+            "type": "text",
+            "header": "Решение",
+            "text": "Разработал адаптивный дизайн для\u00A0P2E игры. В\u00A0этом проекте было много интересных задач, связанных с\u00A0инфографикой. Также это\u00A0был мой\u00A0первый опыт проектирования для\u00A0онлайн-игры в\u00A0вебе."
+        },
+        {
+            "type": "video",
+            "class": "wide",
+            "poster": "/assets/dragons/poster_2.jpg",
+            "src": "/assets/dragons/mobile.mp4"
+        },
+        {
+            "type": "text",
+            "header": "",
+            "text": "Карточки драконов обзавелись рамками, маркирующими редкость дракона."
+        },
+        {
+            "type": "img",
+            "class": "wide",
+            "src": ["/assets/dragons/grid.png"]
+        },
+        {
+            "type": "text",
+            "header": "",
+            "text": "Удобный интерфейс покупки яиц и\u00A0красочный рендер на\u00A0фоне."
+        },
+        {
+            "type": "img",
+            "class": "wide",
+            "src": ["/assets/dragons/buy.png"]
+        },
+        {
+            "type": "text",
+            "header": "",
+            "text": "Статистика по\u00A0двум драконам в\u00A0одном графике для\u00A0экрана скрещивания."
+        },
+        {
+            "type": "img",
+            "class": "wide",
+            "src": ["/assets/dragons/breed.png"]
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "name": "Редизайн DragonZil",
+    "poster": "/assets/dragons/poster_1.jpg",
+    "path": "/assets/zilpay/screens.mp4",
+    "content": [
+        {
+            "type": "text",
+            "header": "Задача",
+            "text": "Редизайн браузерного расширения криптокошелька."
+        },
+        {
+            "type": "text",
+            "header": "Решение",
+            "text": "Разработал удобный и\u00A0красивый дизайн, а\u00A0также key visual для\u00A0бренда ZillPay. Этот\u00A0проект был интересен тем, что \u00A0я\u00A0погрузился в\u00A0тему криптовалюты, впервые спроектировал UI для\u00A0операций с \u00A0криптовалютой."
+        },
+        {
+            "type": "img",
+            "class": "wide",
+            "src": [
+                "/assets/zilpay/nft.jpg",
+                "/assets/zilpay/registartion.jpg",
+                "/assets/zilpay/settings.jpg"
+            ]
+        }
+    ]
+}

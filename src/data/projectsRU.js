@@ -1,15 +1,23 @@
 const ProjectsDataRU = [
     {
-        name: 'Редизайн DragonZil',
-        link: '/dataEN/dragons.json',
+        name: 'Дизайн криптокошелька ZILPay',
+        link: '/dataEN/zilpay.json',
         tags: [
-            'ANIMATION',
             '3D',
-            'WEB DESIGN',
-            'CODING'
+            'WEB DESIGN'
         ],
-        mask: 'flower',
-        img: './images/wtower.jpg'
+        mask: 'circle',
+        img: './images/zilpay.png'
+    },
+    {
+        name: 'Редизайн DragonZIL',
+        link: '/dataRU/dragons.json',
+        tags: [
+            '3D',
+            'WEB DESIGN'
+        ],
+        mask: 'romb',
+        img: './images/dragons.jpg'
     },
     {
         name: 'WEBVR САЙТ БEЛОЙ БАШНИ',

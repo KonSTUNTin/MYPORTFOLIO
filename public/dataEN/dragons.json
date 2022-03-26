@@ -1,22 +1,53 @@
 {
     "name": "Редизайн DragonZil",
+    "poster": "/assets/dragons/poster_1.jpg",
     "path": "/assets/dragons/dragons_main.mp4",
     "content": [
         {
             "type": "text",
             "header": "Task",
-            "text": "To develop an identity for a new university."
+            "text": "To redesign web game with NFT dragons."
         },
         {
             "type": "text",
-            "header": "Part in\u00A0the project",
-            "text": "The project was made while working at Jetstyle. With the client’s team we developed a concept of sign and corporate identity. I was developing the suggested ideas, making up materials, creating the brand book. I also made some generators of corporate graphics."
+            "header": "Solution",
+            "text": "I made new adaptive design. There were a\u00A0lot\u00A0of\u00A0interesting tasks with\u00A0infographics in\u00A0the\u00A0project. This was my\u00A0first experience of\u00A0web\u00A0game development."
         },
         {
             "type": "video",
             "class": "wide",
-            "poster": "/assets/wtowercase/loop1.jpg",
+            "poster": "/assets/dragons/poster_2.jpg",
             "src": "/assets/dragons/mobile.mp4"
+        },
+        {
+            "type": "text",
+            "header": "",
+            "text": "Dragons cards have\u00A0borders to\u00A0indicate dragons rarity."
+        },
+        {
+            "type": "img",
+            "class": "wide",
+            "src": ["/assets/dragons/grid.png"]
+        },
+        {
+            "type": "text",
+            "header": "",
+            "text": "Handy UI to\u00A0buy eggs and\u00A0colorful background image."
+        },
+        {
+            "type": "img",
+            "class": "wide",
+            "src": ["/assets/dragons/buy.png"]
+        },
+        {
+            "type": "text",
+            "header": "",
+            "text": "Dragons statistics in\u00A0the\u00A0single chart on\u00A0the\u00A0breeding page"
+        },
+        {
+            "type": "img",
+            "class": "wide",
+            "src": ["/assets/dragons/breed.png"]
         }
     ]
 }
