@@ -2,13 +2,15 @@ const ProjectsDataEN = [
     {
         name: 'RevolVR UI/UX',
         link: '/dataEN/revolvr.json',
+        secure: '1',
         tags: [
-            'WEB DESIGN',
-            'CODING',
-            'ANIMATION'
+            'ANIMATION',
+            'VR',
+            'GAME',
+            'PRODUCT'
         ],
         mask: 'cross',
-        img: './images/fiit_2.png'
+        img: './images/revolvr.jpg'
     },
     {
         name: 'Logo and\u00A0brand identity for\u00A0FIIT',
@@ -36,6 +38,7 @@ const ProjectsDataEN = [
         link: '/dataEN/dragons.json',
         tags: [
             '3D',
+            'GAME',
             'WEB DESIGN'
         ],
         mask: 'romb',

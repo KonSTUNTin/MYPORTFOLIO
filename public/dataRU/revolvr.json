@@ -1,0 +1,33 @@
+{
+    "name": "DragonZil redesign",
+    "path": "/assets/revolvr/header.mp4",
+    "poster": "/assets/revolvr/header.jpg",
+    "content": [
+        {
+            "type": "text",
+            "header": "Задача",
+            "text": "Спроектировать GUI для\u00A0VR-игры"
+        },
+        {
+            "type": "text",
+            "header": "Роль в\u00A0проекте",
+            "text": "Проект сделан во\u00A0время работы в\u00A0Jetstyle. Вместе с\u00A0продюсером и\u00A0арт-директором разработал GUI, туториал, анимации и\u00A0графику для VR-шутера. Это был\u00A0мой\u00A0первый опыт проектирования большого интерфейса для\u00A0игры и\u00A0для\u00A0VR. Во\u00A0время проекта я\u00A0ставил задачи иллюстратору, 3д-художнику, а\u00A0также поддерживал разработку, проводил тестирования."
+        },
+        {
+            "type": "img",
+            "class": "wide",
+            "src": [
+                "/assets/revolvr/main.jpg",
+                "/assets/revolvr/mine section.jpg",
+                "/assets/revolvr/party.jpg",
+                "/assets/revolvr/results.jpg"
+            ]       
+        },
+        {
+            "type": "video",
+            "class": "wide",
+            "poster": "/assets/revolvr/videos.jpg",
+            "src": "/assets/revolvr/videos.mp4"
+        }
+    ]
+}

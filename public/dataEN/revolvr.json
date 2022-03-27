@@ -1,28 +1,17 @@
 {
     "name": "DragonZil redesign",
-    "poster": "/assets/dragons/poster_1.jpg",
-    "path": "/assets/dragons/dragons_main.mp4",
+    "path": "/assets/revolvr/header.mp4",
+    "poster": "/assets/revolvr/header.jpg",
     "content": [
         {
             "type": "text",
             "header": "Task",
-            "text": "To redesign web game with NFT dragons."
+            "text": "To design VR-game UI/UX"
         },
         {
             "type": "text",
-            "header": "Solution",
-            "text": "I made new adaptive design. There were a\u00A0lot\u00A0of\u00A0interesting tasks with\u00A0infographics in\u00A0the\u00A0project. This was my\u00A0first experience of\u00A0web\u00A0game development."
-        },
-        {
-            "type": "video",
-            "class": "wide",
-            "poster": "/assets/revolvr/videos.jpg",
-            "src": "/assets/revolvr/videos.mp4"
-        },
-        {
-            "type": "text",
-            "header": "",
-            "text": "Dragons cards have\u00A0borders to\u00A0indicate dragons rarity."
+            "header": "Part in\u00A0the\u00A0project",
+            "text": "The project was\u00A0made while working at\u00A0Jetstyle. I\u00A0made UI/UX\u00A0design, tutorial, animations and\u00A0graphics for\u00A0VR-shooter with\u00A0producer and\u00A0art-director. It\u00A0was my\u00A0first experience of\u00A0designing so\u00A0big UI for\u00A0game in\u00A0VR. I\u00A0assigned tasks to\u00A0an\u00A0illustrator, 3d-artist, and\u00A0also I\u00A0supported the\u00A0development, tested hypotheses during the\u00A0project."
         },
         {
             "type": "img",
@@ -31,10 +20,14 @@
                 "/assets/revolvr/main.jpg",
                 "/assets/revolvr/mine section.jpg",
                 "/assets/revolvr/party.jpg",
-                "/assets/revolvr/results.jpg",
-                "/assets/revolvr/videos.jpg"
+                "/assets/revolvr/results.jpg"
             ]       
+        },
+        {
+            "type": "video",
+            "class": "wide",
+            "poster": "/assets/revolvr/videos.jpg",
+            "src": "/assets/revolvr/videos.mp4"
         }
-       
     ]
 }

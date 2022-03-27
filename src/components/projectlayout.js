@@ -14,7 +14,9 @@ class Projects extends React.Component{
       'ANIMATION',
       'PRODUCT',
       'CODING',
-      'BRANDING'
+      'BRANDING',
+      'VR',
+      'GAME'
     ]
     this.tagManager = this.tagManager.bind(this)
   }
