@@ -1,10 +1,22 @@
 const ProjectsDataEN = [
     {
+        name: 'RevolVR UI/UX',
+        link: '/dataEN/revolvr.json',
+        tags: [
+            'WEB DESIGN',
+            'CODING',
+            'ANIMATION'
+        ],
+        mask: 'cross',
+        img: './images/fiit_2.png'
+    },
+    {
         name: 'Logo and\u00A0brand identity for\u00A0FIIT',
         link: '/dataEN/fiit.json',
         tags: [
-            '3D',
-            'WEB DESIGN'
+            'WEB DESIGN',
+            'CODING',
+            'ANIMATION'
         ],
         mask: 'oval',
         img: './images/fiit_2.png'

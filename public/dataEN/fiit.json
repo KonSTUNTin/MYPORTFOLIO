@@ -1,16 +1,33 @@
 {
     "name": "Logo and\u00A0brand identity for\u00A0FIIT",
+    "poster": "/assets/fiit/screencast_poster.jpg",
     "path": "/assets/fiit/screencast.mp4",
     "content": [
         {
+            "type": "link",
+            "path": "https://jet.style/portfolio/case/logo-and-brand-identity-for-fiit",
+            "text": "FIIT brandbook"
+        },
+        {
             "type": "text",
             "header": "Task",
-            "text": "To develop an identity for a new university."
+            "text": "To\u00A0develop an\u00A0identity for\u00A0a\u00A0new university."
         },
         {
             "type": "text",
             "header": "Part in\u00A0the project",
-            "text": "The project was made while working at Jetstyle. With the client’s team we developed a concept of sign and corporate identity. I was developing the suggested ideas, making up materials, creating the brand book. I also made some generators of corporate graphics."
+            "text": "The\u00A0project was made while working at\u00A0Jetstyle. With the\u00A0client’s team we\u00A0developed a\u00A0concept of\u00A0sign and\u00A0corporate identity. We created flexible brand identity in\u00A0which the\u00A0logo is\u00A0a\u00A0container for\u00A0any\u00A0thing. I\u00A0was\u00A0developing the\u00A0suggested ideas, making\u00A0up materials, creating the\u00A0brand book. "
+        },
+        {
+            "type": "text",
+            "header": "",
+            "text": "I\u00A0made generator of\u00A0firmed patterns for\u00A0FIIT."
+        },
+        {
+            "type": "video",
+            "class": "wide",
+            "poster": "/assets/fiit/pattern_poster.jpg",
+            "src": "/assets/fiit/pattern.mp4"
         }
     ]
 }

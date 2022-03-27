@@ -1,10 +1,23 @@
 const ProjectsDataRU = [ 
     {
-        name: 'Логотип и\u00A0брендбук для\u00A0ФИИТ',
-        link: '/dataEN/fiit.json',
+        name: 'RevolVR UI/UX',
+        link: '/dataEN/revolvr.json',
+        secure: '1',
         tags: [
-            '3D',
-            'WEB DESIGN'
+            'WEB DESIGN',
+            'CODING',
+            'ANIMATION'
+        ],
+        mask: 'cross',
+        img: './images/fiit_2.png'
+    },
+    {
+        name: 'Логотип и\u00A0брендбук для\u00A0ФИИТ',
+        link: '/dataRU/fiit.json',
+        tags: [
+            'WEB DESIGN',
+            'CODING',
+            'ANIMATION'
         ],
         mask: 'oval',
         img: './images/fiit_2.png'

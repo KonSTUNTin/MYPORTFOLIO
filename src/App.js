@@ -20,6 +20,13 @@ class App extends React.Component{
       'language': 'en',
       'country': 'EN'
     }
+
+    let href = window.location.href;
+    let code = '0451';
+    let access = 0;
+
+    if(href.indexOf(code)>-1)access = 1
+
     let ProjectsData = ProjectsDataEN;
     let lang = 0;
     let client = window.navigator ? (window.navigator.language ||
@@ -30,6 +37,7 @@ class App extends React.Component{
       ProjectsData = ProjectsDataRU
     }
     this.state ={
+      secure: access,
       status: 'not',
       content: null,
       index: null,
@@ -130,7 +138,7 @@ class App extends React.Component{
         <div id = 'MainContainer' ref = {this.myref} onScroll = {this.scrollHandler} className = {myclass}>
           {(this.state.loaderProgress < 1)&&<Loader lang = {this.state.lang} progress = {this.state.loaderProgress}></Loader>}
           <LeftColumn changeLanguage = {this.changeLanguage} lang = {this.state.lang} openAboutMe = {this.pageAboutMeActivate} handler = {this.closeRightPanel}/>
-          <Projects loaderHandler = {this.loaderUpdate} handler = {this.rightPanelActivate} projects = {this.ProjectsData}/>
+          <Projects secure = {this.state.secure} loaderHandler = {this.loaderUpdate} handler = {this.rightPanelActivate} projects = {this.ProjectsData}/>
         </div>
         <RightPanel lang = {this.state.lang} projects = {this.ProjectsData} onScroll = {this.scrollHandler} linkRef = {this.rightPanelRef} handler = {this.closeRightPanel} data = {this.state} />
       </>

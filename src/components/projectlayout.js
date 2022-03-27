@@ -46,6 +46,7 @@ class Projects extends React.Component{
           this.props.projects.map((element, num) => {
 
             let check = 0;
+            let showhided = 1;
             if(this.state.filter.indexOf("0")===-1){
               this.state.filter.map((index)=>{
                 if(element.tags.indexOf(this.tags4filter[index])>-1){check++}
@@ -53,8 +54,15 @@ class Projects extends React.Component{
             }else{
               check = 1
             }
+            if(element.secure)showhided = 0
+
+            if(this.props.secure===1){
+              showhided = 1
+            }
+
+            
     
-            if(check>=1){
+            if(check>=1 && showhided===1){
               return(
                 <ProjectBlock 
                     key = {'project' + num}
