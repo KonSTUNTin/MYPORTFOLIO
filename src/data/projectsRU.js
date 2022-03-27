@@ -16,9 +16,9 @@ const ProjectsDataRU = [
         name: 'Логотип и\u00A0брендбук для\u00A0ФИИТ',
         link: '/dataRU/fiit.json',
         tags: [
+            'BRANDING',
             'WEB DESIGN',
-            'CODING',
-            'ANIMATION'
+            'CODING'
         ],
         mask: 'oval',
         img: './images/fiit_2.png'
@@ -27,7 +27,6 @@ const ProjectsDataRU = [
         name: 'Дизайн криптокошелька ZILPay',
         link: '/dataEN/zilpay.json',
         tags: [
-            '3D',
             'WEB DESIGN'
         ],
         mask: 'circle',
@@ -37,7 +36,6 @@ const ProjectsDataRU = [
         name: 'Редизайн DragonZIL',
         link: '/dataRU/dragons.json',
         tags: [
-            '3D',
             'GAME',
             'WEB DESIGN'
         ],

@@ -16,9 +16,9 @@ const ProjectsDataEN = [
         name: 'Logo and\u00A0brand identity for\u00A0FIIT',
         link: '/dataEN/fiit.json',
         tags: [
+            'BRANDING',
             'WEB DESIGN',
-            'CODING',
-            'ANIMATION'
+            'CODING'
         ],
         mask: 'oval',
         img: './images/fiit_2.png'
@@ -27,7 +27,6 @@ const ProjectsDataEN = [
         name: 'ZILPay cryptowallet redesign',
         link: '/dataEN/zilpay.json',
         tags: [
-            '3D',
             'WEB DESIGN'
         ],
         mask: 'circle',
@@ -37,7 +36,6 @@ const ProjectsDataEN = [
         name: 'DragonZIL redesign',
         link: '/dataEN/dragons.json',
         tags: [
-            '3D',
             'GAME',
             'WEB DESIGN'
         ],
